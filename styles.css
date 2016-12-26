@@ -61,7 +61,55 @@ h2 {
 
 .panel {
     background-color: #fcdb00;
+    height: 7em;
+
+
+
 }
+
+.panel input {
+    background-color: #222222;
+    border-color: #222222;
+    font-size: 0.8em;
+    padding: 0.5em;
+    border-radius: 3px;
+    width: 8%;
+    height: 3.5em;
+    margin-top: 2.5em;
+    margin-left: 2.5em;
+    background: url(/images/search%20loupe.jpg) 100px 100px no-repeat;
+}
+
+.panel input::-webkit-input-placeholder {
+    color: #e8e8e8;
+
+
+}
+.panel input:-moz-placeholder{
+    color: #e8e8e8;
+}
+.panel input::-moz-placeholder{
+    color: #e8e8e8;
+}
+.panel input:-ms-input-placeholder{
+    color: #e8e8e8;
+}
+
+
+.panel span {
+    margin-left: 45%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     background-color: #fcfae8;
