@@ -14,21 +14,21 @@
     font-style: normal;
 }
 
-.wrapper {
+body {
     background-color: #fcfaec;
-    font: 10em 'New Times Roman', Helvetica, sans-serif;
+    font: 0.8em 'SignikaNegative Regular', Helvetica, sans-serif;
 }
-
 
 header {
     background-color: #fcdb00;
-    padding: 5.6em 0 4em 1.6em;
-    font-family: 'SignikaNegative Regular';
-    margin-bottom: 2.8em;
+    padding: 5.6em 0 4em 2em;
+    font-family: 'SignikaNegative Regular', sans-serif;
+    margin-bottom: 1.8em;
+    font-size: 2em;
 }
 
 h2 {
-    font-family: 'SignikaNegative Bold';
+    font-family: 'SignikaNegative Bold', sans-serif;
 }
 
 .logo {
@@ -40,22 +40,126 @@ h2 {
 .logo-text {
     margin: 0;
     font-size: 0.25em;
-
 }
 
 .header-text {
-    font-size: 0.5em;
-    width: 65%;
+    font-size: 0.75em;
+    width: 60%;
     line-height: 1.8;
-    font-family: 'SignikaNegative Regular';
+    font-family: 'SignikaNegative Regular', sans-serif;
     color: #76681a;
 }
 
+.wrapper {
+    border: 7px solid #faf6d6;
+    margin: 2em;
+}
 
 .main {
-    border: 7px solid #faf6d6;
+
 }
 
 .panel {
     background-color: #fcdb00;
+}
+
+footer {
+    background-color: #fcfae8;
+    padding: 2.6em 7.4em 9.2em 7.4em;
+    font-family: 'SignikaNegative Regular', sans-serif;
+    overflow: hidden;
+    font-style: italic;
+}
+
+footer > ul {
+    line-height: 2.5;
+}
+
+.list-ref {
+    float: left;
+    width: 30%;
+}
+
+.short-info {
+    float: left;
+    width: 15%;
+    line-height: 1.8;
+    margin-top: 0.3em;
+}
+
+.short-info article {
+    color: #cccabc;
+}
+
+.short-info span {
+    font-size: 1.8em;
+    display: inline-block;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 0.5em;
+}
+
+.social-block {
+    float: right;
+    width: 17%;
+    font-style: normal;
+}
+
+.social-pics {
+    float: right;
+    margin-bottom: 5em;
+}
+
+.social-pics li {
+    display: inline-block;
+    margin-right: 1.5em;
+}
+
+.social-pics li:last-child {
+    margin-right: 0;
+}
+
+.social-pics a {
+    color: #696863;
+}
+
+.subscribe::-webkit-input-placeholder {
+    color: #555554;
+    text-align:right;
+    font-weight: bold;
+}
+.subscribe:-moz-placeholder{
+    text-align:right;
+}
+.subscribe::-moz-placeholder{
+    text-align:right;
+}
+.subscribe:-ms-input-placeholder{
+    text-align:right;
+}
+
+.social-block input {
+    float: right;
+    border: none;
+    background-color: #fcfae8;
+    border-bottom: 2px solid #fcd800;
+    width: 187px;
+    font-size: 1.5em;
+    height: 2em;
+}
+
+.social-block button {
+    background-color: #fcfae8;
+    border: none;
+    float: right;
+    clear: both;
+    color: #35ab37;
+    font-weight: bold;
+    font-family: 'SignikaNegative Bold', sans-serif;
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #cccabc;
 }
