@@ -1,0 +1,61 @@
+@import"reset.css";
+
+@font-face {
+    font-family: 'SignikaNegative Bold';
+    src: url('fonts/SignikaNegative-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SignikaNegative Regular';
+    src: url('fonts/SignikaNegative-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+    background-color: #fcfaec;
+    font: 10em 'New Times Roman', Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: #fcdb00;
+    padding: 5.6em 0 4em 1.6em;
+    font-family: 'SignikaNegative Regular';
+    margin-bottom: 2.8em;
+}
+
+h2 {
+    font-family: 'SignikaNegative Bold';
+}
+
+.logo {
+    font-size: 4em;
+    padding: 0;
+    margin-bottom: 0.7em;
+}
+
+.logo-text {
+    margin: 0;
+    font-size: 0.25em;
+
+}
+
+.header-text {
+    font-size: 0.5em;
+    width: 65%;
+    line-height: 1.8;
+    font-family: 'SignikaNegative Regular';
+    color: #76681a;
+}
+
+
+.main {
+    border: 7px solid #faf6d6;
+}
+
+.panel {
+    background-color: #fcdb00;
+}
