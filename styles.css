@@ -51,7 +51,7 @@ h2 {
 }
 
 .wrapper {
-    border: 7px solid #faf6d6;
+    border: 10px solid #faf6d6;
     margin: 2em;
 }
 
@@ -91,12 +91,12 @@ h2 {
 }
 
 .panel .search-symbol {
-    background: url(images/search.jpg) 0 0 no-repeat;
+    background: url(images/search.png) 0 0 no-repeat;
     position: absolute;
-    top: 40px;
-    left: 135px;
-    height: 17px;
-    width: 17px;
+    top: 35px;
+    left: 130px;
+    height: 20px;
+    width: 20px;
 }
 
 .panel .center {
@@ -132,12 +132,13 @@ h2 {
 }
 
 span.login {
-    background: url(images/login.jpg) 0 0 repeat;
+    background: url(images/login.png) 0 0 no-repeat;
     position: absolute;
     top: 2.5em;
-    right: 9.4em;
-    height: 26px;
-    width: 33px;
+    right: 9.1em;
+    height: 32px;
+    width: 42px;
+    cursor: pointer;
 }
 
 .basket {
@@ -146,13 +147,122 @@ span.login {
 }
 
 span.basket {
-    background: url(images/basket.jpg) 0 0 repeat;
+    background: url(images/basket.png) 0 0 no-repeat;
     position: absolute;
-    top: 2.45em;
-    right: 2.2em;
+    top: 2.2em;
+    right: 2.5em;
     height: 35px;
-    width: 33px;
+    width: 30px;
+    cursor: pointer;
 }
+
+.content {
+    background-color: #ffffff;
+    font-size: 1.1em;
+    text-align: center;
+    overflow: hidden;
+}
+
+.content li {
+    display: inline-block;
+    margin: 2.5em 4em 1.6em 0;
+}
+
+.content a {
+    color: #414141;
+}
+
+.advertisement {
+    border: 3px solid #f6f6f6;
+    padding: 1em 0.1em 2em 1em;
+    position: relative;
+    margin: 0 1em 3em 5em;
+    float: left;
+    width: 58%;
+}
+
+.advertisement figcaption {
+    text-transform: uppercase;
+    margin-bottom: 2.8em;
+    font-size: 1.3em;
+}
+
+.advertisement img {
+    width: 875px;
+    height: 459px;
+    background-color: #8b8b8b;
+    border: 3px solid #f6f6f6;
+    margin-bottom: 1em;
+}
+
+.advertisement span {
+    position: absolute;
+    bottom: 4em;
+    left: 4.1em;
+    border: 2px solid #000000;
+    padding: 0.5em 1.5em;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-family: 'SignikaNegative Bold', sans-serif;
+}
+
+.advertisement a {
+    font-family: 'SignikaNegative Bold', sans-serif;
+}
+
+.sidebar {
+    border: 3px solid #f6f6f6;
+    overflow: hidden;
+    width: 30%;
+}
+
+.sidebar section {
+    padding: 0 2em;
+}
+
+.sidebar h3 {
+    font-size: 3em;
+}
+
+.sidebar article {
+    width: 33%;
+    border-bottom: 2px solid #000000;
+    margin-left: 9.5em;
+    margin-bottom: 1.7em;
+}
+
+.sidebar img {
+    width: 520px;
+    height: 380px;
+    background-color: #8b8b8b;
+}
+
+.sidebar span {
+    font-family: 'SignikaNegative Regular', sans-serif;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 2em;
+}
+
+.sidebar button {
+    display: block;
+    margin: 0 0 1.5em 4em;
+    padding: 0.5em;
+    font-family: 'SignikaNegative Regular', sans-serif;
+    font-size: 1.5em;
+    background-color: #fcdb00;
+    border-radius: 20px;
+    border: none;
+    width: 55%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 
 
 
