@@ -56,15 +56,13 @@ h2 {
 }
 
 .main {
-
 }
 
 .panel {
     background-color: #fcdb00;
-    height: 7em;
-
-
-
+    height: 7.2em;
+    position: relative;
+    overflow: hidden;
 }
 
 .panel input {
@@ -73,17 +71,14 @@ h2 {
     font-size: 0.8em;
     padding: 0.5em;
     border-radius: 3px;
-    width: 8%;
-    height: 3.5em;
+    width: 9%;
+    height: 4em;
     margin-top: 2.5em;
     margin-left: 2.5em;
-    background: url(/images/search%20loupe.jpg) 100px 100px no-repeat;
 }
 
 .panel input::-webkit-input-placeholder {
     color: #e8e8e8;
-
-
 }
 .panel input:-moz-placeholder{
     color: #e8e8e8;
@@ -95,15 +90,69 @@ h2 {
     color: #e8e8e8;
 }
 
-
-.panel span {
-    margin-left: 45%;
+.panel .search-symbol {
+    background: url(images/search.jpg) 0 0 no-repeat;
+    position: absolute;
+    top: 40px;
+    left: 135px;
+    height: 17px;
+    width: 17px;
 }
 
+.panel .center {
+    display: block;
+    line-height: 1;
+}
 
+.panel .up {
+    font-family: 'SignikaNegative Bold', sans-serif;
+    font-size: 2.3em;
+    margin-top: -1.6em;
+    margin-left: 25em;
+    width: 10%;
+}
 
+.panel .down {
+    font-family: 'SignikaNegative Bold', sans-serif;
+    margin-left: 44.3em;
+    font-size: 1.3em;
+    width: 10%;
+}
 
+.panel a {
+    background-color: #222222;
+    height: 7.2em;
+    width: 7.2em;
+    position: absolute;
+}
 
+.login {
+    top: 0;
+    right: 7.3em;
+}
+
+span.login {
+    background: url(images/login.jpg) 0 0 repeat;
+    position: absolute;
+    top: 2.5em;
+    right: 9.4em;
+    height: 26px;
+    width: 33px;
+}
+
+.basket {
+    top: 0;
+    right: 0;
+}
+
+span.basket {
+    background: url(images/basket.jpg) 0 0 repeat;
+    position: absolute;
+    top: 2.45em;
+    right: 2.2em;
+    height: 35px;
+    width: 33px;
+}
 
 
 
