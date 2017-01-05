@@ -51,6 +51,11 @@ table {
   src: url("../fonts/SignikaNegative-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
+@font-face {
+  font-family: 'SignikaNegative Light';
+  src: url("../fonts/SignikaNegative-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 body {
   background-color: #fcfaec;
   font: 0.8em "SignikaNegative Regular", sans-serif; }
@@ -78,7 +83,8 @@ body {
     padding-bottom: 100px; }
     body .wrapper .main {
       border: 10px solid #faf6d6;
-      margin: 2em; }
+      margin: 2%;
+      position: relative; }
       body .wrapper .main .panel {
         background-color: #fcdb00;
         height: 7.2em;
@@ -117,11 +123,11 @@ body {
           font-size: 2.7em;
           margin-top: -1.4em;
           margin-left: 19.7em;
-          width: 10%; }
+          width: 12%; }
         body .wrapper .main .panel .down {
           margin-left: 31.2em;
           font-size: 1.7em;
-          width: 10%; }
+          width: 12%; }
         body .wrapper .main .panel a {
           background-color: #222222;
           height: 7.2em;
@@ -130,7 +136,17 @@ body {
         body .wrapper .main .panel .login {
           top: 0;
           right: 7.3em; }
-        body .wrapper .main .panel span.login {
+        body .wrapper .main .panel .green:before {
+          background: url(../images/login-onclick.png) 0 0 no-repeat;
+          position: absolute;
+          top: 2em;
+          right: 9.5em;
+          height: 38px;
+          width: 38px;
+          cursor: pointer; }
+        body .wrapper .main .panel .green {
+          background-color: #4bb44b; }
+        body .wrapper .main .panel .loginImg {
           background: url(../images/login.png) 0 0 no-repeat;
           position: absolute;
           top: 2.5em;
@@ -141,7 +157,7 @@ body {
         body .wrapper .main .panel .basket {
           top: 0;
           right: 0; }
-        body .wrapper .main .panel span.basket {
+        body .wrapper .main .panel .basketImg {
           background: url(../images/basket.png) 0 0 no-repeat;
           position: absolute;
           top: 2.2em;
@@ -149,6 +165,101 @@ body {
           height: 35px;
           width: 30px;
           cursor: pointer; }
+      body .wrapper .main .login-form:before {
+        content: '';
+        position: absolute;
+        right: 25px;
+        top: -40px;
+        border: 20px solid transparent;
+        border-bottom: 20px solid #faf8e9; }
+      body .wrapper .main .login-form {
+        background-color: #faf8e9;
+        height: 26%;
+        width: 23%;
+        position: absolute;
+        z-index: 10;
+        border: 1px solid #f6f6f6;
+        color: #222222;
+        top: 7.2em;
+        right: 7.3em;
+        display: none; }
+        body .wrapper .main .login-form .wrap {
+          padding: 17% 0.5% 0 14.5%; }
+        body .wrapper .main .login-form span {
+          display: block;
+          margin-bottom: 13%;
+          font-family: "SignikaNegative Light", sans-serif;
+          font-size: 170%; }
+        body .wrapper .main .login-form .login-title {
+          font-size: 230%; }
+        body .wrapper .main .login-form .login-title:before {
+          content: ' ';
+          background: url(../images/login-enter.png) 0 0 no-repeat;
+          width: 32px;
+          height: 32px;
+          display: inline-block;
+          margin: 0 5% -2% 4%; }
+        body .wrapper .main .login-form input {
+          display: block;
+          border: 1px solid #f6f6f6;
+          color: #767675;
+          height: 2.7em;
+          width: 80%;
+          border-radius: 10px;
+          font-size: 150%;
+          font-family: "SignikaNegative Light", sans-serif;
+          margin-bottom: 5%; }
+        body .wrapper .main .login-form .input-password {
+          margin-bottom: 12%; }
+        body .wrapper .main .login-form button {
+          text-transform: uppercase;
+          background-color: #fcdb00;
+          border-radius: 20px;
+          border: none;
+          height: 2.7em;
+          width: 78%;
+          font-size: 180%;
+          font-family: "SignikaNegative Light", sans-serif;
+          box-shadow: 0 1.5px 1.5px 0 #cfb402;
+          margin-bottom: 20%;
+          margin-left: 2%;
+          cursor: pointer; }
+        body .wrapper .main .login-form .line {
+          width: 32%;
+          border-bottom: 1px solid #222222;
+          text-align: center;
+          margin: 0 0 2% 25%; }
+        body .wrapper .main .login-form .text-before-socials {
+          margin-left: 19%;
+          margin-bottom: 9%; }
+        body .wrapper .main .login-form a {
+          display: block;
+          height: 17%;
+          width: 49.8%;
+          background-color: #4bb44b;
+          float: left;
+          margin-right: 0.3%;
+          position: relative; }
+        body .wrapper .main .login-form a:last-child {
+          margin-right: 0; }
+        body .wrapper .main .login-form .left:before {
+          content: ' ';
+          background: url(../images/facebook-symbol.jpg) 0 0 no-repeat;
+          width: 17px;
+          height: 37px;
+          display: inline-block;
+          position: absolute;
+          top: 29%;
+          left: 45%; }
+        body .wrapper .main .login-form .right:before {
+          content: ' ';
+          background: url(../images/twitter-symbol.jpg) 0 0 no-repeat;
+          width: 34px;
+          height: 29px;
+          display: inline-block;
+          position: absolute;
+          top: 33%;
+          right: 40%; }
       body .wrapper .main .content {
         background-color: #ffffff;
         font-size: 1.4em;
@@ -339,7 +450,7 @@ body {
             width: 230px;
             font-size: 2em;
             height: 2em; }
-          body .wrapper .main footer .social-block button {
+          body .wrapper .main footer .social-block .send {
             background-color: #fcfae8;
             border: none;
             float: right;

@@ -3,7 +3,8 @@
 <head lang="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="js test" content="Сайт об js">
-    <script src="jstest.js"></script>
+
+    <script src="login.js"></script>
 
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <title>mega super js test</title>
@@ -34,10 +35,23 @@
                 <span class="center up">bloom</span>
                 <span class="center down">CO.NCEPT</span>
                 <a href="#" class="login"></a>
-                <span class="login"></span>
+                <span class="loginImg"></span>
                 <a href="#" class="basket"></a>
-                <span class="basket"></span>
+                <span class="basketImg"></span>
             </div>
+
+            <form class="login-form">
+                <div class="wrap">
+                    <span class="login-title">Login Panel</span>
+                    <input name="loginField" type="text">
+                    <input name="passwordField" type="password" class="input-password">
+                    <button>Sign in</button>
+                    <span class="line"></span>
+                    <span class="text-before-socials">or sign in with</span>
+                </div>
+                <a href="#" class="left"></a>
+                <a href="#" class="right"></a>
+            </form>
 
             <div class="content">
                 <nav>
@@ -140,9 +154,9 @@
                     <li><a href="#">Twitter</a></li>
                     <li><a href="#">Pinterest</a></li>
                 </ul>
-                <form>
+                <form class="subscribe-form">
                     <input name="subscribe" type="email" class="subscribe" placeholder="your email@">
-                    <button>send</button>
+                    <button class="send">send</button>
                 </form>
             </div>
         </footer>
@@ -153,5 +167,6 @@
     </div>
 
     </div>
+
 </body>
 </html>
