@@ -356,19 +356,47 @@ header {
           overflow: hidden;
           width: 30%;
           margin-bottom: 7%;
+          position: relative;
+
+          .textOnImg {
+            position: absolute;
+            top: 10%;
+            right: 28%;
+            color: #ffffff;
+            line-height: 1;
+
+            h2 {
+              font-size: 6em;
+              text-shadow: 6px 0 2px #dcdcdc;
+            }
+            span {
+              font-size: 2.5em;
+              text-shadow: 2px 2px 2px #dcdcdc;
+            }
+          }
+
+          section:before{
+            content: '';
+            position: absolute;
+            right: 43%;
+            top: 45%;
+            border: 30px solid transparent;
+            border-bottom: 30px solid #fff;
+          }
 
           section {
             padding: 0 2em;
           }
 
           h3 {
-            font-size: 3em;
+            font-size: 2.8em;
+            font-family: "SignikaNegative Bold", sans-serif;
           }
 
           article {
-            width: 33%;
+            width: 43%;
             border-bottom: 2px solid #000000;
-            margin-left: 9.8em;
+            margin-left: 6em;
             margin-bottom: 1.7em;
           }
 
@@ -378,6 +406,10 @@ header {
             background-color: #8b8b8b;
           }
 
+          .onclickButtonImg {
+            background-color: #2b6133;
+          }
+
           span {
             font-family: $font-regular;
             font-size: 1.1em;
@@ -385,18 +417,44 @@ header {
             margin-bottom: 2em;
           }
 
-          button {
+          a {
             display: block;
-            margin: 0 0 1.5em 4em;
-            padding: 0.5em;
+            margin: 0 0 1.5em 2.6em;
+            padding: 0.6em;
             font-family: $font-regular;
             font-size: 1.5em;
             background-color: $yellow;
             border-radius: 28px;
             border: none;
             width: 55%;
-            cursor: pointer;
+            text-decoration: none;
+            color: $black;
           }
+
+          .onclickButtonBeforeA {
+            content: ' ';
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            background: url(../images/heart.png) 35px 17px no-repeat;
+          }
+
+          .onclickButtonA {
+            background-color: #5bcf6c;
+            box-shadow: 0 3px 3px 0 #3db04e;
+            color: #ffffff;
+
+            display: block;
+            margin: 0 0 1.5em 2.6em;
+            padding: 0.6em;
+            font-family: $font-regular;
+            font-size: 1.5em;
+            border-radius: 28px;
+            border: none;
+            width: 55%;
+            text-decoration: none;
+          }
+
         }
 
         .list-of-popular {

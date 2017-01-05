@@ -20,21 +20,22 @@
         loginSymbol.onclick = logImgSymbol.onclick = function(event) {
             var target = event.target;
             target.classList.toggle('greenBckgr');
-
-            if (spanLoginSymbol.classList.contains('loginImg')) {
-                spanLoginSymbol.classList.remove('loginImg');
-                spanLoginSymbol.classList.add('changeSymbol');
-            } else {
-                spanLoginSymbol.classList.add('loginImg');
-                spanLoginSymbol.classList.remove('changeSymbol');
-            }
-
-            if (form.classList.contains('hide')) {
-                form.classList.remove('hide');
-            } else {form.classList.add('hide');
-            }
-
+            spanLoginSymbol.classList.toggle('loginImg');
+            spanLoginSymbol.classList.toggle('changeSymbol');
+            form.classList.toggle('hide');
         };
+
+        var sidebar = document.getElementsByClassName('sidebar')[0];
+        var buttonSidebar = sidebar.lastElementChild.lastElementChild;
+        var imgSidebar = sidebar.firstElementChild;
+
+        buttonSidebar.onclick = function(event) {
+            var target = event.target;
+            buttonSidebar.innerHTML = 'I liked';
+            buttonSidebar.classList.add('onclickButtonA');
+            buttonSidebar.classList.add('onclickButtonBeforeA');
+            imgSidebar.classList.toggle('onclickButtonImg');
+        }
     };
 
 }());
