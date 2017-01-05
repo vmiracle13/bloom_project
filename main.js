@@ -28,13 +28,14 @@
         var sidebar = document.getElementsByClassName('sidebar')[0];
         var buttonSidebar = sidebar.lastElementChild.lastElementChild;
         var imgSidebar = sidebar.firstElementChild;
+        var textOnImg = sidebar.childNodes[3];
 
         buttonSidebar.onclick = function(event) {
-            var target = event.target;
             buttonSidebar.innerHTML = 'I liked';
-            buttonSidebar.classList.add('onclickButtonA');
-            buttonSidebar.classList.add('onclickButtonBeforeA');
+            buttonSidebar.classList.toggle('onclickButtonA');
+            buttonSidebar.classList.toggle('onclickButtonBeforeA');
             imgSidebar.classList.toggle('onclickButtonImg');
+            textOnImg.classList.toggle('hide');
         }
     };
 
