@@ -1,0 +1,112 @@
+@import '_variables';
+
+.panel {
+  background-color: $yellow;
+  height: 7.2em;
+  position: relative;
+  overflow: hidden;
+
+  input {
+    background-color: $black;
+    border: none;
+    font-size: 0.8em;
+    padding: 1em;
+    border-radius: 4px;
+    width: 9%;
+    height: 4em;
+    margin-top: 2.5em;
+    margin-left: 3em;
+  }
+
+  input::-webkit-input-placeholder {
+    color: #e8e8e8;
+  }
+  input:-moz-placeholder {
+    color: #e8e8e8;
+  }
+  input::-moz-placeholder {
+    color: #e8e8e8;
+  }
+  input:-ms-input-placeholder {
+    color: #e8e8e8;
+  }
+
+  .search-symbol {
+    background: url(../images/search.png) 0 0 no-repeat;
+    position: absolute;
+    top: 35px;
+    left: 130px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .center {
+    display: block;
+    line-height: 1;
+    font-family: $font-bold;
+  }
+
+  .up {
+    font-size: 2.7em;
+    margin-top: -1.4em;
+    margin-left: 19.7em;
+    width: 12%;
+  }
+
+  .down {
+    margin-left: 31.2em;
+    font-size: 1.7em;
+    width: 12%;
+  }
+
+  a {
+    background-color: $black;
+    height: 7.2em;
+    width: 7.2em;
+    position: absolute;
+  }
+
+  .login {
+    top: 0;
+    right: 7.3em;
+  }
+
+  .loginImg {
+    background: url(../images/login.png) 0 0 no-repeat;
+    position: absolute;
+    top: 2.5em;
+    right: 9.1em;
+    height: 32px;
+    width: 42px;
+    cursor: pointer;
+  }
+
+  .basket {
+    top: 0;
+    right: 0;
+  }
+
+  .basketImg {
+    background: url(../images/basket.png) 0 0 no-repeat;
+    position: absolute;
+    top: 2.2em;
+    right: 2.5em;
+    height: 35px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .changeSymbol {
+    background: url(../images/login-onclick.png) 0 0 no-repeat;
+    position: absolute;
+    top: 2em;
+    right: 9.5em;
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+  }
+
+  .greenBckgr {
+    background-color: $green;
+  }
+}

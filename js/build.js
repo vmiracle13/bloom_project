@@ -76,7 +76,7 @@
 	        var imgSidebar = sidebar.firstElementChild;
 	        var textOnImg = sidebar.childNodes[3];
 
-	        buttonSidebar.onclick = function(event) {
+	        buttonSidebar.onclick = function() {
 	            buttonSidebar.innerHTML = 'I liked';
 	            buttonSidebar.classList.toggle('onclickButtonA');
 	            buttonSidebar.classList.toggle('onclickButtonBeforeA');

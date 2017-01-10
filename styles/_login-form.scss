@@ -1,0 +1,126 @@
+@import '_variables';
+
+.login-form:before {
+  content: '';
+  position: absolute;
+  right: 25px;
+  top: -40px;
+  border: 20px solid transparent;
+  border-bottom: 20px solid #faf8e9;
+}
+
+.login-form {
+  background-color: #faf8e9;
+  height: 26%;
+  width: 23%;
+  position: absolute;
+  z-index: 10;
+  border: 1px solid $grey;
+  color: $black;
+  top: 7.2em;
+  right: 7.3em;
+
+  .wrap {
+    padding: 17% 0.5% 0 14.5%;
+  }
+
+  span {
+    display: block;
+    margin-bottom: 13%;
+    font-family: $font-light;
+    font-size: 170%;
+    color: #545351;
+  }
+
+  .login-title {
+    font-size: 230%;
+  }
+
+  .login-title:before {
+    content: ' ';
+    background: url(../images/login-enter.png) 0 0 no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin: 0 5% -2% 4%;
+  }
+
+  input {
+    display: block;
+    border: 1px solid $grey;
+    color: #767675;
+    height: 2.7em;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 150%;
+    font-family: $font-light;
+    margin-bottom: 5%;
+  }
+
+  .input-password {
+    margin-bottom: 12%;
+  }
+
+  button {
+    text-transform: uppercase;
+    background-color: $yellow;
+    border-radius: 20px;
+    border: none;
+    height: 2.7em;
+    width: 78%;
+    font-size: 180%;
+    font-family: $font-light;
+    box-shadow: 0 1.5px 1.5px 0 #cfb402;
+    margin-bottom: 20%;
+    margin-left: 2%;
+    cursor: pointer;
+  }
+
+  .line {
+    width: 32%;
+    border-bottom: 1px solid $black;
+    text-align: center;
+    margin: 0 0 2% 25%;
+  }
+
+  .text-before-socials {
+    margin-left: 19%;
+    margin-bottom: 9%;
+  }
+
+  a {
+    display: block;
+    height: 17%;
+    width: 49.8%;
+    background-color: $green;
+    float: left;
+    margin-right: 0.3%;
+    position: relative;
+  }
+
+  a:last-child {
+    margin-right: 0;
+  }
+
+  .left:before {
+    content: ' ';
+    background: url(../images/facebook-symbol.jpg) 0 0 no-repeat;
+    width: 17px;
+    height: 37px;
+    display: inline-block;
+    position: absolute;
+    top: 29%;
+    left: 45%;
+  }
+
+  .right:before {
+    content: ' ';
+    background: url(../images/twitter-symbol.jpg) 0 0 no-repeat;
+    width: 34px;
+    height: 29px;
+    display: inline-block;
+    position: absolute;
+    top: 33%;
+    right: 40%;
+  }
+}

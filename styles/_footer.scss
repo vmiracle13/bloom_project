@@ -1,0 +1,101 @@
+@import '_variables';
+
+footer {
+  background-color: #fcfae8;
+  padding: 2.6em 12.5em 8.2em 12em;
+  font-family: $font-regular;
+  overflow: hidden;
+  font-style: italic;
+
+  a {
+    text-decoration: none;
+    color: #cccabc;
+  }
+
+  .list-ref {
+    float: left;
+    width: 33%;
+    line-height: 2.5;
+    font-size: 1.3em;
+  }
+
+  .short-info {
+    float: left;
+    width: 20%;
+    line-height: 1.8;
+    margin-top: 0.3em;
+
+    article {
+      color: #cccabc;
+      font-size: 1.2em;
+    }
+
+    span {
+      font-size: 2.4em;
+      display: inline-block;
+      font-weight: bold;
+      font-style: normal;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .social-block {
+    float: right;
+    width: 17%;
+    font-style: normal;
+
+    .social-pics {
+      float: right;
+      margin-bottom: 5em;
+
+      li {
+        display: inline-block;
+        margin-right: 1.5em;
+      }
+
+      li:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        color: #696863;
+      }
+    }
+
+    .subscribe::-webkit-input-placeholder {
+      color: #555554;
+      text-align: right;
+      font-weight: bold;
+    }
+    .subscribe:-moz-placeholder {
+      text-align: right;
+    }
+    .subscribe::-moz-placeholder {
+      text-align: right;
+    }
+    .subscribe:-ms-input-placeholder {
+      text-align: right;
+    }
+
+    input {
+      float: right;
+      border: none;
+      background-color: #fcfae8;
+      border-bottom: 2px solid #fcd800;
+      width: 230px;
+      font-size: 2em;
+      height: 2em;
+    }
+
+    .send {
+      background-color: #fcfae8;
+      border: none;
+      float: right;
+      color: $green;
+      font-weight: bold;
+      font-family: $font-bold;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+  }
+}
