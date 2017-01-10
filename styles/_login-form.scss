@@ -1,10 +1,11 @@
 @import '_variables';
+@import '_fonts';
 
 .login-form:before {
   content: '';
   position: absolute;
-  right: 25px;
-  top: -40px;
+  right: 44%;
+  top: -6.3%;
   border: 20px solid transparent;
   border-bottom: 20px solid #faf8e9;
 }
@@ -12,13 +13,14 @@
 .login-form {
   background-color: #faf8e9;
   height: 26%;
-  width: 23%;
+  width: 25%;
   position: absolute;
   z-index: 10;
   border: 1px solid $grey;
   color: $black;
-  top: 7.2em;
-  right: 7.3em;
+  top: 5.92%;
+  right: 3.2%;
+  font-family: $light;
 
   .wrap {
     padding: 17% 0.5% 0 14.5%;
@@ -27,13 +29,11 @@
   span {
     display: block;
     margin-bottom: 13%;
-    font-family: $font-light;
-    font-size: 170%;
     color: #545351;
   }
 
   .login-title {
-    font-size: 230%;
+    font-size: 2.6em;
   }
 
   .login-title:before {
@@ -42,50 +42,53 @@
     width: 32px;
     height: 32px;
     display: inline-block;
-    margin: 0 5% -2% 4%;
+    margin: 0 5% -0.7% 4%;
   }
 
   input {
     display: block;
-    border: 1px solid $grey;
+    border: 1px solid #efefef;
     color: #767675;
-    height: 2.7em;
-    width: 80%;
     border-radius: 10px;
-    font-size: 150%;
-    font-family: $font-light;
     margin-bottom: 5%;
+    font-size: 1em;
+    padding: 7% 4%;
+    width: 75%;
+    text-align: center;
   }
 
   .input-password {
-    margin-bottom: 12%;
+    margin-bottom: 11%;
+    letter-spacing: 0.1em;
+    font-size: 1.8em;
+    padding: 5% 4%;
   }
 
   button {
     text-transform: uppercase;
     background-color: $yellow;
-    border-radius: 20px;
+    border-radius: 35px;
     border: none;
-    height: 2.7em;
-    width: 78%;
-    font-size: 180%;
-    font-family: $font-light;
-    box-shadow: 0 1.5px 1.5px 0 #cfb402;
-    margin-bottom: 20%;
-    margin-left: 2%;
+    padding: 5% 5%;
+    width: 83%;
+    font-family: $light;
+    box-shadow: 0 2px 2px 0 #cfb402;
+    margin-bottom: 18%;
     cursor: pointer;
+    font-size: 1.5em;
   }
 
   .line {
-    width: 32%;
+    width: 30%;
     border-bottom: 1px solid $black;
     text-align: center;
-    margin: 0 0 2% 25%;
+    margin: 0 0 2% 27%;
   }
 
   .text-before-socials {
-    margin-left: 19%;
+    margin-left: 25%;
     margin-bottom: 9%;
+    font-size: 1.2em;
   }
 
   a {

@@ -1,105 +1,106 @@
 @import '_variables';
 
 .sidebar {
-  border: 3px solid $grey;
-  overflow: hidden;
-  width: 30%;
-  margin-bottom: 7%;
-  position: relative;
+      border: 3px solid $grey;
+      overflow: hidden;
+      position: relative;
 
-  .textOnImg {
-    position: absolute;
-    top: 10%;
-    right: 28%;
-    color: #ffffff;
-    line-height: 1;
+      img {
+          max-width: 100%;
+          width: 520px;
+          height: 347px;
+          background-color: #8b8b8b;
+      }
 
-    h2 {
-      font-size: 6em;
-      text-shadow: 6px 0 2px #dcdcdc;
-    }
-    span {
-      font-size: 2.5em;
-      text-shadow: 2px 2px 2px #dcdcdc;
-    }
-  }
+      section:before{
+          content: '';
+          position: absolute;
+          right: 43%;
+          top: 46%;
+          border: 30px solid transparent;
+          border-bottom: 30px solid #fff;
+      }
 
-  section:before{
-    content: '';
-    position: absolute;
-    right: 43%;
-    top: 46%;
-    border: 30px solid transparent;
-    border-bottom: 30px solid #fff;
-  }
+      section {
+          padding: 0 3% 10% 3%;
+      }
 
-  section {
-    padding: 0 2em;
-  }
+      h3 {
+          font-size: 2.8em;
+          font-family: $font-bold;
+      }
 
-  h3 {
-    font-size: 2.8em;
-    font-family: "SignikaNegative Bold", sans-serif;
-  }
+      article {
+          width: 43%;
+          border-bottom: 2px solid #000000;
+          margin-left: 29%;
+          margin-bottom: 5%;
+      }
 
-  article {
-    width: 43%;
-    border-bottom: 2px solid #000000;
-    margin-left: 6em;
-    margin-bottom: 1.7em;
-  }
+      span {
+          font-family: $font-regular;
+          font-size: 1.1em;
+          display: block;
+          margin-bottom: 12%;
+      }
 
-  img {
-    width: 520px;
-    height: 347px;
-    background-color: #8b8b8b;
-  }
+      a {
+          margin: 0 auto;
+          display: block;
+          padding: 3.2%;
+          font-family: $font-regular;
+          font-size: 1.5em;
+          background-color: $yellow;
+          border-radius: 28px;
+          border: none;
+          width: 55%;
+          text-decoration: none;
+          color: $black;
+      }
 
-  .onclickButtonImg {
-    background-color: #2b6133;
-  }
 
-  span {
-    font-family: $font-regular;
-    font-size: 1.1em;
-    display: block;
-    margin-bottom: 2em;
-  }
+    // for js  - hover actions
+      .textOnImg {
+          position: absolute;
+          top: 10%;
+          right: 28%;
+          color: #ffffff;
+          line-height: 1;
 
-  a {
-    display: block;
-    margin: 0 0 1.5em 2.6em;
-    padding: 0.6em;
-    font-family: $font-regular;
-    font-size: 1.5em;
-    background-color: $yellow;
-    border-radius: 28px;
-    border: none;
-    width: 55%;
-    text-decoration: none;
-    color: $black;
-  }
+          h2 {
+              font-size: 6em;
+              text-shadow: 6px 0 2px #dcdcdc;
+          }
+          span {
+              font-size: 2.5em;
+              text-shadow: 2px 2px 2px #dcdcdc;
+          }
+      }
 
-  .onclickButtonBeforeA {
-    content: ' ';
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    background: url(../images/heart.png) 35px 17px no-repeat;
-  }
+      .onclickButtonImg {
+          background-color: #2b6133;
+      }
 
-  .onclickButtonA {
-    background-color: #5bcf6c;
-    box-shadow: 0 3px 3px 0 #3db04e;
-    color: #ffffff;
-    display: block;
-    margin: 0 0 1.5em 2.6em;
-    padding: 0.6em;
-    font-family: $font-regular;
-    font-size: 1.5em;
-    border-radius: 28px;
-    border: none;
-    width: 55%;
-    text-decoration: none;
-  }
+      .onclickButtonBeforeA {
+          content: ' ';
+          width: 25px;
+          height: 25px;
+          display: inline-block;
+          background: url(../images/heart.png) 35px 17px no-repeat;
+      }
+
+      .onclickButtonA {
+          background-color: #5bcf6c;
+          box-shadow: 0 3px 3px 0 #3db04e;
+          color: #ffffff;
+          display: block;
+          margin: 0 0 1.5em 2.6em;
+          padding: 0.6em;
+          font-family: $font-regular;
+          font-size: 1.5em;
+          border-radius: 28px;
+          border: none;
+          width: 55%;
+          text-decoration: none;
+      }
 }

@@ -30,17 +30,12 @@
     margin-left: 1%;
   }
 
-  ul {
-    overflow: hidden;
-  }
-
   li {
     display: inline-block;
     background-color: #8b8b8b;
     float: left;
     width: 33%;
     height: 313px;
-    margin: 0;
 
     figure {
       display: none;
@@ -75,7 +70,6 @@
     figcaption:last-child {
       text-transform: lowercase;
       font-weight: normal;
-      font-size: 130%;
     }
 
     a {

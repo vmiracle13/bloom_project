@@ -2,20 +2,17 @@
 
 .panel {
   background-color: $yellow;
-  height: 7.2em;
   position: relative;
   overflow: hidden;
+  padding: 2.5% 0 2.5% 3.2%;
 
   input {
     background-color: $black;
     border: none;
-    font-size: 0.8em;
-    padding: 1em;
-    border-radius: 4px;
-    width: 9%;
-    height: 4em;
-    margin-top: 2.5em;
-    margin-left: 3em;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1.6% 1.7%;
+    border-radius: 5px;
   }
 
   input::-webkit-input-placeholder {
@@ -34,8 +31,8 @@
   .search-symbol {
     background: url(../images/search.png) 0 0 no-repeat;
     position: absolute;
-    top: 35px;
-    left: 130px;
+    top: 40%;
+    left: 15%;
     height: 20px;
     width: 20px;
   }
@@ -48,34 +45,32 @@
 
   .up {
     font-size: 2.7em;
-    margin-top: -1.4em;
-    margin-left: 19.7em;
-    width: 12%;
+    margin-top: -4.5%;
+    margin-left: 45%;
   }
 
   .down {
-    margin-left: 31.2em;
-    font-size: 1.7em;
-    width: 12%;
+    font-size: 1.5em;
+    margin-left: 45.5%;
   }
 
   a {
     background-color: $black;
-    height: 7.2em;
-    width: 7.2em;
+    height: 100%;
+    width: 9%;
     position: absolute;
   }
 
   .login {
     top: 0;
-    right: 7.3em;
+    right: 9.06%;
   }
 
   .loginImg {
     background: url(../images/login.png) 0 0 no-repeat;
     position: absolute;
-    top: 2.5em;
-    right: 9.1em;
+    top: 36%;
+    right: 12%;
     height: 32px;
     width: 42px;
     cursor: pointer;
@@ -89,13 +84,14 @@
   .basketImg {
     background: url(../images/basket.png) 0 0 no-repeat;
     position: absolute;
-    top: 2.2em;
-    right: 2.5em;
+    top: 34%;
+    right: 3.55%;
     height: 35px;
     width: 30px;
     cursor: pointer;
   }
 
+  //for js - onclick on Login symbol
   .changeSymbol {
     background: url(../images/login-onclick.png) 0 0 no-repeat;
     position: absolute;

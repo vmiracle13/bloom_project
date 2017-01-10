@@ -18,12 +18,11 @@ body {
 
   .wrapper {
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 7%;
 
     .main {
       border: 10px solid #faf6d6;
       margin: 2%;
-      position: relative;
 
       .hide {
         display: none;
@@ -31,9 +30,15 @@ body {
 
       .content {
         background-color: #ffffff;
-        font-size: 1.4em;
         text-align: center;
         overflow: hidden;
+        padding: 4%;
+
+          .container {
+              overflow: hidden;
+              display: flex;
+              margin-bottom: 7%;
+          }
         }
     }
 
