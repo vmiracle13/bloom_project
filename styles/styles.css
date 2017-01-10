@@ -204,8 +204,8 @@ header {
   .panel .changeSymbol {
     background: url(../images/login-onclick.png) 0 0 no-repeat;
     position: absolute;
-    top: 2em;
-    right: 9.5em;
+    top: 36%;
+    right: 12.5%;
     height: 38px;
     width: 38px;
     cursor: pointer; }
@@ -264,7 +264,7 @@ header {
   z-index: 10;
   border: 1px solid #f6f6f6;
   color: #222222;
-  top: 5.92%;
+  top: 6.2%;
   right: 3.2%;
   font-family: "Signika Light", sans-serif; }
   .login-form .wrap {
@@ -580,12 +580,12 @@ nav {
     display: inline-block;
     background: url(../images/heart.png) 35px 17px no-repeat; }
   .sidebar .onclickButtonA {
+    padding: 3.2%;
     background-color: #5bcf6c;
     box-shadow: 0 3px 3px 0 #3db04e;
     color: #ffffff;
     display: block;
-    margin: 0 0 1.5em 2.6em;
-    padding: 0.6em;
+    margin: 0 auto;
     font-family: "SignikaNegative Regular", sans-serif;
     font-size: 1.5em;
     border-radius: 28px;
