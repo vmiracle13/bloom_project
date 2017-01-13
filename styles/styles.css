@@ -665,6 +665,92 @@ nav {
       font-weight: bold;
       color: black; }
 
+@font-face {
+  font-family: 'SignikaNegative Regular';
+  src: url("../fonts/SignikaNegative-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'SignikaNegative Bold';
+  src: url("../fonts/SignikaNegative-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'SignikaNegative Light';
+  src: url("../fonts/SignikaNegative-Light.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'Signika Light';
+  src: url("../fonts/Signika-Light.otf") format("opentype"); }
+.basket-form {
+  position: absolute;
+  top: 6.20%;
+  right: 2.60%;
+  z-index: 10; }
+  .basket-form li {
+    font-family: "Signika Light", sans-serif;
+    font-size: 1.5em;
+    background-color: #fbfaf1;
+    padding-right: 3%; }
+    .basket-form li span {
+      vertical-align: middle; }
+    .basket-form li img {
+      margin-top: 4%;
+      float: right; }
+    .basket-form li .basket-product-photo {
+      max-width: 145px;
+      width: 145px;
+      height: 90px;
+      background-color: #787878;
+      display: inline-block; }
+    .basket-form li .basket-product-name {
+      margin: 0 17% 0 4%; }
+    .basket-form li .basket-product-number {
+      font-size: 0.8em;
+      padding-right: 4%;
+      border-right: 1px solid #000;
+      margin-right: 3%; }
+    .basket-form li .basket-product-price {
+      font-family: "SignikaNegative Bold", sans-serif;
+      font-size: 1.2em; }
+  .basket-form li:nth-child(2n) {
+    background-color: #4bb44b;
+    color: #fff; }
+  .basket-form li:nth-child(2n) .basket-product-photo {
+    background-color: #8b8b8b; }
+  .basket-form li:nth-child(2n) .basket-product-number {
+    border-right: 1px solid #fff; }
+  .basket-form .basket-total-info {
+    background-color: #fff;
+    padding: 3%;
+    font-weight: bold;
+    text-align: right; }
+    .basket-form .basket-total-info span {
+      margin-right: 3%; }
+    .basket-form .basket-total-info span:nth-child(2) {
+      padding-right: 2%; }
+    .basket-form .basket-total-info .basket-total-number {
+      margin-right: 0; }
+    .basket-form .basket-total-info .basket-total-units {
+      border-right: 1px solid #000;
+      padding-right: 3%; }
+    .basket-form .basket-total-info .basket-total-word {
+      font-weight: normal;
+      margin-right: 0; }
+    .basket-form .basket-total-info .basket-total-price {
+      font-weight: bold; }
+    .basket-form .basket-total-info a {
+      display: inline-block;
+      background-color: #4bb44b;
+      border-radius: 5px;
+      color: #fff;
+      padding: 2% 4%;
+      text-decoration: none; }
+    .basket-form .basket-total-info img {
+      margin-right: 4%;
+      vertical-align: middle; }
+
 body {
   background-color: #fcfaec;
   font: 100% "SignikaNegative Regular", sans-serif; }
