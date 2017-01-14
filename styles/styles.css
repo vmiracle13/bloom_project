@@ -201,6 +201,20 @@ header {
     height: 35px;
     width: 30px;
     cursor: pointer; }
+  .panel .chosen-product-number {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #4bb44b;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: 2.1%;
+    color: #fff;
+    line-height: 1.8; }
   .panel .changeSymbol {
     background: url(../images/login-onclick.png) 0 0 no-repeat;
     position: absolute;
