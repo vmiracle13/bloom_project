@@ -1,15 +1,15 @@
-@import '_reset';
-@import '_fonts';
-@import '_header';
-@import '_variables';
-@import '_panel';
-@import '_login-form';
-@import '_footer';
-@import '_content_nav';
-@import '_content_advertisement';
-@import '_content_sidebar';
-@import '_content_listOfPopular';
-@import '_basket-form';
+@import 'reset';
+@import 'fonts';
+@import 'header';
+@import 'variables';
+@import 'panel';
+@import 'login-form';
+@import 'footer';
+@import 'content_nav';
+@import 'content_advertisement';
+@import 'content_sidebar';
+@import 'content_listOfPopular';
+@import 'basket-form';
 
 
 body {
@@ -50,7 +50,7 @@ body {
       bottom: 0;
       width: 100%;
       background-color: $yellow;
-      z-index: -5;
+      z-index: -10;
     }
   }
 }
