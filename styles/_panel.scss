@@ -91,6 +91,24 @@
     cursor: pointer;
   }
 
+  .chosen-product-number {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: $green;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: 2.1%;
+    color: #fff;
+    line-height: 1.8;
+  }
+
+
+
   //for js - onclick on Login symbol
   .changeSymbol {
     background: url(../images/login-onclick.png) 0 0 no-repeat;
