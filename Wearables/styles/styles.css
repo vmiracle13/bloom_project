@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'SignikaNegative Regular';
+  src: url("../fonts/SignikaNegative-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'SignikaNegative Regular';
+  src: url("../fonts/SignikaNegative-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  background-color: #fcfaec;
+  font: 100% "SignikaNegative Regular", sans-serif; }
+  body .wrapper .main {
+    border: 10px solid #faf6d6;
+    margin: 2%;
+    padding: 3% 5%;
+    background-color: #fff; }
+    body .wrapper .main .hide {
+      display: none; }
+    body .wrapper .main nav {
+      margin: 2% 2% 4% 2%;
+      text-align: center;
+      font-weight: bold; }
+      body .wrapper .main nav a {
+        color: #0b0b0b;
+        margin-right: 5%;
+        display: inline-block;
+        text-decoration: none; }
+      body .wrapper .main nav a:last-child {
+        margin-right: 0; }
+    body .wrapper .main ul {
+      display: flex;
+      flex-flow: row wrap; }
+      body .wrapper .main ul li {
+        border: 1px solid #f6f6f6;
+        display: inline-block;
+        text-align: center;
+        margin: 0 3% 3% 0;
+        font-size: 1.2em;
+        cursor: pointer;
+        tab-index: 1;
+        padding-bottom: 2%; }
+        body .wrapper .main ul li img {
+          background-color: #787878;
+          display: block;
+          margin-bottom: 20px; }
+        body .wrapper .main ul li .small {
+          width: 320px;
+          height: 250px; }
+        body .wrapper .main ul li .big {
+          width: 520px;
+          height: 280px; }
+        body .wrapper .main ul li .product-price {
+          font-weight: 900; }
+        body .wrapper .main ul li .product-name {
+          text-transform: uppercase;
+          display: block;
+          margin-bottom: 5%; }
+        body .wrapper .main ul li a {
+          display: inline-block;
+          background-color: #4bb44b;
+          border-radius: 5px;
+          color: #fff;
+          padding: 4% 8%;
+          text-decoration: none;
+          font-size: 0.9em; }
+        body .wrapper .main ul li .color-circles {
+          margin-bottom: 3%; }
+          body .wrapper .main ul li .color-circles .circle {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            margin-left: -3%; }
+          body .wrapper .main ul li .color-circles .yellow {
+            background-color: #f7f97c; }
+          body .wrapper .main ul li .color-circles .orange {
+            background-color: #f86f1c; }
+          body .wrapper .main ul li .color-circles .green {
+            background-color: #4bb44b; }
+          body .wrapper .main ul li .color-circles .darkblue {
+            background-color: #509db6; }
+          body .wrapper .main ul li .color-circles .blue {
+            background-color: #54a4f6; }
+          body .wrapper .main ul li .color-circles .magenta {
+            background-color: #eb4a88; }
+          body .wrapper .main ul li .color-circles .lavender {
+            background-color: #94b8d9; }
+      body .wrapper .main ul li:last-child {
+        margin-right: 0; }
+      body .wrapper .main ul .big-block {
+        text-align: left; }
+        body .wrapper .main ul .big-block span {
+          margin-left: 5%; }
+        body .wrapper .main ul .big-block .color-circles {
+          margin-left: 7%; }
+          body .wrapper .main ul .big-block .color-circles .circle {
+            margin-left: -2%; }
+
+/*# sourceMappingURL=styles.css.map */

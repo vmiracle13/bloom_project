@@ -1,0 +1,146 @@
+@import 'variables';
+@import 'fonts';
+
+
+body {
+  background-color: $backgrcolor;
+  font: 100% $font-regular;
+
+  .wrapper {
+
+    .main {
+      border: 10px solid #faf6d6;
+      margin: 2%;
+      padding: 3% 5%;
+      background-color: #fff;
+
+      .hide {
+        display: none;
+      }
+
+      nav {
+        margin: 2% 2% 4% 2%;
+        text-align: center;
+        font-weight: bold;
+
+
+
+        a {
+          color: #0b0b0b;
+          margin-right: 5%;
+          display: inline-block;
+          text-decoration: none;
+        }
+
+        a:last-child {
+          margin-right: 0;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-flow: row wrap;
+
+        li {
+          @include border();
+          display: inline-block;
+          text-align: center;
+          margin: 0 3% 3% 0;
+          font-size: 1.2em;
+          cursor: pointer;
+          tab-index: 1;
+          padding-bottom: 2%;
+
+          img {
+            background-color: $dark_grey;
+            display: block;
+            margin-bottom: 20px;
+          }
+
+          .small {
+            width: 320px;
+            height: 250px;
+          }
+
+          .big {
+            width: 520px;
+            height: 280px;
+          }
+
+          .product-price {
+            font-weight: 900;
+          }
+
+          .product-name {
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 5%;
+          }
+
+          a {
+            display: inline-block;
+            background-color: $green;
+            border-radius: 5px;
+            color: #fff;
+            padding: 4% 8%;
+            text-decoration: none;
+            font-size: 0.9em;
+          }
+
+          .color-circles {
+
+            margin-bottom: 3%;
+
+            .circle {
+              @include circle();
+              margin-left: -3%;
+            }
+
+            .yellow {
+              background-color: $light_yellow;
+            }
+            .orange {
+              background-color: $orange;
+            }
+            .green {
+              background-color: $green;
+            }
+            .darkblue {
+              background-color: $dark_blue;
+            }
+            .blue {
+              background-color: $blue;
+            }
+            .magenta {
+              background-color: $magenta;
+            }
+            .lavender {
+              background-color: $lavender;
+            }
+          }
+        }
+
+        li:last-child {
+          margin-right: 0;
+        }
+
+        .big-block {
+          text-align: left;
+
+          span {
+            margin-left: 5%;
+          }
+
+          .color-circles {
+            margin-left: 7%;
+
+            .circle {
+              margin-left: -2%;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

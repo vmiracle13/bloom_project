@@ -205,17 +205,17 @@ header {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: #4bb44b;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     border-radius: 15px;
+    background-color: #4bb44b;
     position: absolute;
     text-align: center;
     top: 50%;
     right: 2.1%;
     color: #fff;
     line-height: 1.8; }
-  .panel .changeSymbol {
+  .panel .changeLoginSymbol {
     background: url(../images/login-onclick.png) 0 0 no-repeat;
     position: absolute;
     top: 36%;
@@ -223,8 +223,19 @@ header {
     height: 38px;
     width: 38px;
     cursor: pointer; }
+  .panel .changeBasketSymbol {
+    background: url(../images/basket-onclick.png) 0 0 no-repeat;
+    position: absolute;
+    background-size: 70%;
+    top: 32%;
+    right: 2.55%;
+    height: 54px;
+    width: 47px;
+    cursor: pointer; }
   .panel .greenBckgr {
     background-color: #4bb44b; }
+  .panel .chosen-product-number-onclick {
+    background-color: #fcdb00; }
 
 @font-face {
   font-family: 'SignikaNegative Regular';
@@ -706,28 +717,30 @@ nav {
     font-family: "Signika Light", sans-serif;
     font-size: 1.5em;
     background-color: #fbfaf1;
-    padding-right: 3%; }
-    .basket-form li span {
-      vertical-align: middle; }
-    .basket-form li img {
-      margin-top: 4%;
-      float: right; }
+    height: 30%; }
     .basket-form li .basket-product-photo {
       max-width: 145px;
       width: 145px;
       height: 90px;
       background-color: #787878;
-      display: inline-block; }
-    .basket-form li .basket-product-name {
-      margin: 0 17% 0 4%; }
-    .basket-form li .basket-product-number {
-      font-size: 0.8em;
-      padding-right: 4%;
-      border-right: 1px solid #000;
-      margin-right: 3%; }
-    .basket-form li .basket-product-price {
-      font-family: "SignikaNegative Bold", sans-serif;
-      font-size: 1.2em; }
+      vertical-align: top; }
+    .basket-form li .block {
+      padding: 3%;
+      display: inline-block;
+      vertical-align: top; }
+      .basket-form li .block .basket-product-name {
+        margin-right: 15%; }
+      .basket-form li .block .basket-product-number {
+        font-size: 0.8em;
+        padding-right: 3%;
+        border-right: 1px solid #000;
+        margin-right: 3%; }
+      .basket-form li .block .basket-product-price {
+        font-family: "SignikaNegative Bold", sans-serif;
+        font-size: 1.2em;
+        margin-right: 10%; }
+      .basket-form li .block img {
+        text-align: right; }
   .basket-form li:nth-child(2n) {
     background-color: #4bb44b;
     color: #fff; }

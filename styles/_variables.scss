@@ -4,9 +4,19 @@ $yellow: #fcdb00;
 $black: #222222;
 $green: #4bb44b;
 $grey: #f6f6f6;
+$darkgrey: #787878;
 $backgrcolor: #fcfaec;
 
 $font-regular: 'SignikaNegative Regular', sans-serif;
 $font-bold: 'SignikaNegative Bold', sans-serif;
 $font-light: 'SignikaNegative Light', sans-serif;
 $light: 'Signika Light', sans-serif;
+
+@mixin circle ($width: 30px, $height: 30px, $border-radius: 15px) {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}

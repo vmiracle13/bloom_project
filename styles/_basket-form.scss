@@ -10,40 +10,49 @@
       font-family: $light;
       font-size: 1.5em;
       background-color: #fbfaf1;
-      padding-right: 3%;
-
-      span {
-        vertical-align: middle;
-      }
-
-      img {
-        margin-top: 4%;
-        float: right;
-      }
+      height: 30%;
 
       .basket-product-photo {
         max-width: 145px;
         width: 145px;
         height: 90px;
-        background-color: #787878;
+        background-color: $darkgrey;
+        vertical-align: top;
+      }
+
+      .block {
+        padding: 3%;
         display: inline-block;
+        //line-height: 2;
+        vertical-align: top;
+
+        .basket-product-name {
+          margin-right: 15%;
+        }
+
+        .basket-product-number {
+          font-size: 0.8em;
+          padding-right: 3%;
+          border-right: 1px solid #000;
+          margin-right: 3%;
+        }
+
+        .basket-product-price {
+          font-family: $font-bold;
+          font-size: 1.2em;
+          margin-right: 10%;
+        }
+
+        img {
+          text-align: right;
+          //display: inline-block;
+          //vertical-align: middle;
+        }
       }
 
-      .basket-product-name {
-        margin: 0 17% 0 4%;
-      }
 
-      .basket-product-number {
-        font-size: 0.8em;
-        padding-right: 4%;
-        border-right: 1px solid #000;
-        margin-right: 3%;
-      }
 
-      .basket-product-price {
-        font-family: $font-bold;
-        font-size: 1.2em;
-      }
+
     }
 
     li:nth-child(2n) {
