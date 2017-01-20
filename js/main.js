@@ -8,6 +8,7 @@
  */
 
 //подключение файла login
+import './total';
 import './login';
-
-
+import './basket';
+import './sidebar';

@@ -31,9 +31,9 @@
       }
 
       article {
-          width: 43%;
-          border-bottom: 2px solid #000000;
-          margin-left: 29%;
+          width: 32%;
+          border-bottom: 2px solid #000;
+          margin-left: 34%;
           margin-bottom: 5%;
       }
 
@@ -44,9 +44,8 @@
           margin-bottom: 12%;
       }
 
-      a {
+      button {
           margin: 0 auto;
-          display: block;
           padding: 3.2%;
           font-family: $font-regular;
           font-size: 1.5em;
@@ -54,53 +53,50 @@
           border-radius: 28px;
           border: none;
           width: 55%;
-          text-decoration: none;
           color: $black;
+          cursor: pointer;
       }
-
 
     // for js  - hover actions
       .textOnImg {
           position: absolute;
           top: 10%;
-          right: 28%;
-          color: #ffffff;
+          right: 31%;
+          color: #fff;
           line-height: 1;
 
           h2 {
-              font-size: 6em;
+              font-size: 7em;
               text-shadow: 6px 0 2px #dcdcdc;
           }
           span {
-              font-size: 2.5em;
+              font-size: 3.5em;
               text-shadow: 2px 2px 2px #dcdcdc;
           }
       }
 
-      .onclickButtonImg {
-          background-color: #2b6133;
+      .onclickButtonBackground {
+          background-color: $green;
       }
 
-      .onclickButtonBeforeA {
+      .onclickButtonBefore {
           content: ' ';
           width: 25px;
-          height: 25px;
           display: inline-block;
           background: url(../images/heart.png) 35px 17px no-repeat;
       }
 
-      .onclickButtonA {
+      .onclickButton {
           padding: 3.2%;
-          background-color: #5bcf6c;
+          background-color: $green;
           box-shadow: 0 3px 3px 0 #3db04e;
-          color: #ffffff;
-          display: block;
+          color: #fff;
           margin: 0 auto;
           font-family: $font-regular;
           font-size: 1.5em;
           border-radius: 28px;
           border: none;
           width: 55%;
-          text-decoration: none;
+          cursor: pointer;
       }
 }

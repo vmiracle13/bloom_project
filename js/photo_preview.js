@@ -1,7 +1,3 @@
-/**
- * Created by Victoria on 16.01.2017.
- */
-
 ;(function() {
 
   window.onload = function() {
@@ -16,7 +12,10 @@
     function choosePreview(event) {
       var target = event.target;
 
-      debugger;
+      if (target.tagName != 'IMG') {
+        return;
+      }
+
       if (selectedPreview) {
         selectedPreview.classList.remove(activeClass);
       }

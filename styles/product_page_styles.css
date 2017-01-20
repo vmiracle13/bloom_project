@@ -1,55 +1,7 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 @font-face {
   font-family: 'SignikaNegative Regular';
   src: url("../fonts/SignikaNegative-Regular.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'SignikaNegative Light';
-  src: url("../fonts/SignikaNegative-Light.ttf") format("truetype");
-  font-weight: 100;
   font-style: normal; }
 @font-face {
   font-family: 'SignikaNegative Bold';
@@ -57,26 +9,29 @@ table {
   font-weight: bold;
   font-style: normal; }
 @font-face {
-  font-family: 'SignikaNegative Regular';
-  src: url("../fonts/SignikaNegative-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: 'SignikaNegative Light';
   src: url("../fonts/SignikaNegative-Light.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
 @font-face {
-  font-family: 'SignikaNegative Bold';
-  src: url("../fonts/SignikaNegative-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
+  font-family: 'Signika Light';
+  src: url("../fonts/Signika-Light.otf") format("opentype"); }
+/*
+@mixin circle ($width: 20px, $height: 20px, $border-radius: 10px) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+*/
 body {
   background-color: #fcfaec;
   font: 100% "SignikaNegative Regular", sans-serif; }
   body .green-background {
     position: absolute;
-    top: 35%;
+    top: 35.5%;
     height: 500px;
     width: 100%;
     background-color: #4bb44b;
@@ -124,63 +79,65 @@ body {
           margin-bottom: 3%; }
         body .wrapper .main form .underlined {
           border-bottom: 1px solid #f6f6f6;
-          margin-bottom: 5%; }
-          body .wrapper .main form .underlined li {
-            display: inline-block;
-            margin-right: 23%;
-            vertical-align: middle; }
-            body .wrapper .main form .underlined li .currency {
+          margin-bottom: 5%;
+          display: flex; }
+          body .wrapper .main form .underlined .price {
+            margin-right: 23%; }
+            body .wrapper .main form .underlined .price .currency {
               font-size: 1.8em;
               display: inline;
               font-family: "SignikaNegative Bold", sans-serif; }
-            body .wrapper .main form .underlined li .product-price {
+            body .wrapper .main form .underlined .price .product-price {
               font-size: 2.8em;
               display: inline;
               font-family: "SignikaNegative Bold", sans-serif; }
-            body .wrapper .main form .underlined li .circle {
+          body .wrapper .main form .underlined .colour-circles {
+            margin-right: 20%;
+            padding-top: 2%; }
+            body .wrapper .main form .underlined .colour-circles .circle {
               display: inline-block;
               width: 30px;
               height: 30px;
-              -moz-border-radius: 20px;
-              -webkit-border-radius: 20px;
-              border-radius: 20px;
+              -moz-border-radius: 15px;
+              -webkit-border-radius: 15px;
+              border-radius: 15px;
               margin-right: -10%; }
-            body .wrapper .main form .underlined li .yellow {
+            body .wrapper .main form .underlined .colour-circles .yellow {
               background-color: #f7f97c; }
-            body .wrapper .main form .underlined li .orange {
+            body .wrapper .main form .underlined .colour-circles .orange {
               background-color: #f86f1c; }
-            body .wrapper .main form .underlined li .blue {
+            body .wrapper .main form .underlined .colour-circles .blue {
               background-color: #54a4f6; }
-            body .wrapper .main form .underlined li select {
-              background-color: #fcfaec;
-              border: 1px solid #faf5d5;
-              border-radius: 20px;
-              font-size: 0.9em;
-              color: #787878;
-              padding: 14%; }
-          body .wrapper .main form .underlined li:last-child {
-            margin-right: 0; }
+          body .wrapper .main form .underlined select {
+            background-color: #fcfaec;
+            border: 1px solid #faf5d5;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #787878;
+            padding: 14%;
+            outline: none; }
         body .wrapper .main form .product-description {
           color: #787878;
           font-size: 0.9em;
           margin-bottom: 5%; }
         body .wrapper .main form .photos {
-          margin-bottom: 17.5%; }
+          margin-bottom: 14.5%;
+          padding: 0; }
           body .wrapper .main form .photos li {
             display: inline-block;
             margin-right: 3%; }
             body .wrapper .main form .photos li img {
-              width: 130px;
-              height: 130px;
+              width: 9em;
+              height: 9em;
               background-color: #787878;
               vertical-align: middle; }
           body .wrapper .main form .photos li:last-child {
             margin-right: 0; }
           body .wrapper .main form .photos .onclick {
-            width: 110px;
-            height: 110px;
+            width: 7.9em;
+            height: 7.9em;
             border: 10px solid #f8f3cf; }
-        body .wrapper .main form input {
+        body .wrapper .main form button {
           background-color: #4bb44b;
           border-radius: 5px;
           color: #fff;
@@ -189,4 +146,4 @@ body {
           font-family: "SignikaNegative Regular", sans-serif;
           font-size: 1.1em; }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=product_page_styles.css.map */

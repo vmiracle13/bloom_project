@@ -7,9 +7,9 @@
 
     var product = document.querySelector('li');
 
-    product.addEventListener('mouseover', handler1);
+    product.addEventListener('mouseover', focusOnElement);
 
-    function handler1() {
+    function focusOnElement() {
       var a = product.querySelectorAll('a');
       var button;
 

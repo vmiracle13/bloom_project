@@ -1,10 +1,18 @@
 @import '_fonts';
 
+$light_yellow: #f7f97c;
 $yellow: #fcdb00;
+$orange: #f86f1c;
 $black: #222222;
 $green: #4bb44b;
 $grey: #f6f6f6;
-$darkgrey: #787878;
+$dark_grey: #787878;
+$dark_blue: #509db6;
+$blue: #54a4f6;
+$magenta: #eb4a88;
+$lavender: #94b8d9;
+$cream_border: #faf5d5;
+
 $backgrcolor: #fcfaec;
 
 $font-regular: 'SignikaNegative Regular', sans-serif;
@@ -20,3 +28,17 @@ $light: 'Signika Light', sans-serif;
   -webkit-border-radius: 15px;
   border-radius: 15px;
 }
+
+@mixin border ($width: 1px, $color: $grey) {
+  border: $width solid $color;
+}
+/*
+@mixin circle ($width: 20px, $height: 20px, $border-radius: 10px) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+*/

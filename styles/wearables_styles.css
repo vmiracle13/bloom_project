@@ -4,10 +4,46 @@
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: 'SignikaNegative Bold';
+  src: url("../fonts/SignikaNegative-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'SignikaNegative Light';
+  src: url("../fonts/SignikaNegative-Light.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'Signika Light';
+  src: url("../fonts/Signika-Light.otf") format("opentype"); }
+/*
+@mixin circle ($width: 20px, $height: 20px, $border-radius: 10px) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+*/
+@font-face {
   font-family: 'SignikaNegative Regular';
   src: url("../fonts/SignikaNegative-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'SignikaNegative Bold';
+  src: url("../fonts/SignikaNegative-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'SignikaNegative Light';
+  src: url("../fonts/SignikaNegative-Light.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'Signika Light';
+  src: url("../fonts/Signika-Light.otf") format("opentype"); }
 body {
   background-color: #fcfaec;
   font: 100% "SignikaNegative Regular", sans-serif; }
@@ -69,11 +105,11 @@ body {
           margin-bottom: 3%; }
           body .wrapper .main ul li .color-circles .circle {
             display: inline-block;
-            width: 20px;
-            height: 20px;
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-            border-radius: 10px;
+            width: 30px;
+            height: 30px;
+            -moz-border-radius: 15px;
+            -webkit-border-radius: 15px;
+            border-radius: 15px;
             margin-left: -3%; }
           body .wrapper .main ul li .color-circles .yellow {
             background-color: #f7f97c; }
@@ -100,4 +136,4 @@ body {
           body .wrapper .main ul .big-block .color-circles .circle {
             margin-left: -2%; }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=wearables_styles.css.map */

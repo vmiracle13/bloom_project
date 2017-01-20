@@ -2,9 +2,10 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="Product%20page/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/product_page_styles.css">
     <title>Product page</title>
-    <script src="Product%20page/js/main.js"></script>
+
+    <script src="./js/photo_preview.js"></script>
 
 </head>
 <body>
@@ -19,25 +20,25 @@
                     <a href="#">back to shop</a>
                 </div>
 
-                <img class="main-product-photo" src="Product%20page/images/back-to-shop.png" alt="photo1">
+                <img class="main-product-photo" src="images/back-to-shop.png" alt="photo1">
 
                 <form name="product-page" action="" method="post">
                     <span class="product-name">Flippin Sweet chair</span>
                     <span class="designed">Designer: Marco Hemmerling</span>
 
-                    <ul class="underlined">
-                      <li>
+                    <div class="underlined">
+                      <div class="price">
                         <span class="currency">$</span>
                         <span class="product-price">34</span>
-                      </li>
+                      </div>
 
-                      <li>
+                      <div class="colour-circles">
                         <span class="orange circle"></span>
                         <span class="yellow circle"></span>
                         <span class="blue circle"></span>
-                      </li>
+                      </div>
 
-                      <li>
+                      <div>
                         <select class="units-number" size="1" name="number">
                           <option selected value='1'>1 pcs</option>
                           <option value='2'>2 pcs</option>
@@ -50,19 +51,19 @@
                           <option value='9'>9 pcs</option>
                           <option value='10'>10 pcs</option>
                         </select>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
 
                     <p class="product-description">The FLIP chair is a modern and whimsical design for kids that is made from resistant, cushy foam that's perfect (and safe) for playtime.</p>
                     <ul class="photos">
-                        <li><img src="Product%20page/images/back-to-shop.png" alt="photo1"></li>
+                        <li><img src="images/back-to-shop.png" alt="photo1"></li>
                         <li><img src="" alt="photo2"></li>
                         <li><img src="" alt="photo3"></li>
                     </ul>
 
-                    <input type="submit" value="Add to Card">
+                    <button>Add to Card</button>
                 </form>
-                </div>
+
             </div>
         </div>
 </body>

@@ -78,6 +78,16 @@ table {
 @font-face {
   font-family: 'Signika Light';
   src: url("../fonts/Signika-Light.otf") format("opentype"); }
+/*
+@mixin circle ($width: 20px, $height: 20px, $border-radius: 10px) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+*/
 header {
   background-color: #fcdb00;
   padding: 16.6% 0.5% 15% 6%;
@@ -118,6 +128,16 @@ header {
 @font-face {
   font-family: 'Signika Light';
   src: url("../fonts/Signika-Light.otf") format("opentype"); }
+/*
+@mixin circle ($width: 20px, $height: 20px, $border-radius: 10px) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+*/
 @font-face {
   font-family: 'SignikaNegative Regular';
   src: url("../fonts/SignikaNegative-Regular.ttf") format("truetype");
@@ -136,102 +156,118 @@ header {
 @font-face {
   font-family: 'Signika Light';
   src: url("../fonts/Signika-Light.otf") format("opentype"); }
+/*
+@mixin circle ($width: 20px, $height: 20px, $border-radius: 10px) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+*/
 .panel {
   background-color: #fcdb00;
-  position: relative;
-  overflow: hidden;
-  padding: 2.5% 0 2.5% 3.2%; }
-  .panel input {
-    background-color: #222222;
-    border: none;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 1.6% 1.7%;
-    border-radius: 5px; }
-  .panel input::-webkit-input-placeholder {
-    color: #e8e8e8; }
-  .panel input:-moz-placeholder {
-    color: #e8e8e8; }
-  .panel input::-moz-placeholder {
-    color: #e8e8e8; }
-  .panel input:-ms-input-placeholder {
-    color: #e8e8e8; }
-  .panel .search-symbol {
-    background: url(../images/search.png) 0 0 no-repeat;
-    position: absolute;
-    top: 40%;
-    left: 15%;
-    height: 20px;
-    width: 20px; }
-  .panel .center {
-    display: block;
-    line-height: 1;
-    font-family: "SignikaNegative Bold", sans-serif; }
-  .panel .up {
-    font-size: 2.7em;
-    margin-top: -4.5%;
-    margin-left: 45%; }
-  .panel .down {
-    font-size: 1.5em;
-    margin-left: 45.5%; }
-  .panel a {
-    background-color: #222222;
-    height: 100%;
-    width: 9%;
-    position: absolute; }
-  .panel .login {
-    top: 0;
-    right: 9.06%; }
-  .panel .loginImg {
-    background: url(../images/login.png) 0 0 no-repeat;
-    position: absolute;
-    top: 36%;
-    right: 12%;
-    height: 32px;
-    width: 42px;
-    cursor: pointer; }
-  .panel .basket {
-    top: 0;
-    right: 0; }
-  .panel .basketImg {
-    background: url(../images/basket.png) 0 0 no-repeat;
-    position: absolute;
-    top: 34%;
-    right: 3.55%;
-    height: 35px;
-    width: 30px;
-    cursor: pointer; }
-  .panel .chosen-product-number {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    border-radius: 15px;
-    background-color: #4bb44b;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    right: 2.1%;
-    color: #fff;
-    line-height: 1.8; }
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+  .panel .search-field {
+    height: 15%;
+    padding: 2.5% 0.5% 2.5% 3.2%; }
+    .panel .search-field input {
+      background-color: #222222;
+      border: none;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 20px 20px;
+      border-radius: 5px;
+      position: relative; }
+    .panel .search-field input::-webkit-input-placeholder {
+      color: #e8e8e8; }
+    .panel .search-field input:-moz-placeholder {
+      color: #e8e8e8; }
+    .panel .search-field input::-moz-placeholder {
+      color: #e8e8e8; }
+    .panel .search-field input:-ms-input-placeholder {
+      color: #e8e8e8; }
+    .panel .search-field .search-symbol {
+      background: url(../images/search.png) 0 0 no-repeat;
+      position: absolute;
+      top: 42%;
+      left: 14.5%;
+      height: 30px;
+      width: 30px; }
+    .panel .search-field input:hover {
+      width: 315px; }
+    .panel .search-field .search:hover + .search-symbol {
+      left: 22%; }
+  .panel .logo {
+    background: url(../images/logo-small.png) 0 0 no-repeat;
+    width: 123px;
+    height: 59px;
+    margin: 2% 6% 2.5% 0.5%; }
+    .panel .logo a {
+      text-indent: -9999px;
+      height: 100%;
+      display: block; }
+  .panel .login-and-basket {
+    display: flex; }
+    .panel .login-and-basket button {
+      border: none;
+      background-color: #000;
+      width: 130px;
+      cursor: pointer; }
+    .panel .login-and-basket .loginButton {
+      position: relative;
+      border-right: 1px solid #fcdb00; }
+      .panel .login-and-basket .loginButton .loginImg {
+        background: url(../images/login.png) 0 0 no-repeat;
+        width: 42px;
+        height: 32px;
+        position: absolute;
+        top: 35%;
+        right: 30%; }
+    .panel .login-and-basket .basketButton {
+      position: relative; }
+      .panel .login-and-basket .basketButton .basketImg {
+        background: url(../images/basket.png) 0 0 no-repeat;
+        width: 30px;
+        height: 35px;
+        position: absolute;
+        top: 32%;
+        right: 40%; }
+      .panel .login-and-basket .basketButton .chosen-product-number {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+        background-color: #4bb44b;
+        position: absolute;
+        top: 49%;
+        right: 25%;
+        color: #fff;
+        line-height: 1.7;
+        font-size: 1.3em;
+        font-family: "SignikaNegative Bold", sans-serif; }
+  .panel .login-form + .loginButton:hover {
+    display: block; }
   .panel .changeLoginSymbol {
     background: url(../images/login-onclick.png) 0 0 no-repeat;
     position: absolute;
-    top: 36%;
-    right: 12.5%;
+    width: 42px;
     height: 38px;
-    width: 38px;
-    cursor: pointer; }
+    top: 35%;
+    right: 30%; }
   .panel .changeBasketSymbol {
     background: url(../images/basket-onclick.png) 0 0 no-repeat;
     position: absolute;
     background-size: 70%;
     top: 32%;
-    right: 2.55%;
+    right: 30%;
     height: 54px;
-    width: 47px;
-    cursor: pointer; }
+    width: 47px; }
   .panel .greenBckgr {
     background-color: #4bb44b; }
   .panel .chosen-product-number-onclick {
@@ -255,6 +291,16 @@ header {
 @font-face {
   font-family: 'Signika Light';
   src: url("../fonts/Signika-Light.otf") format("opentype"); }
+/*
+@mixin circle ($width: 20px, $height: 20px, $border-radius: 10px) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+*/
 @font-face {
   font-family: 'SignikaNegative Regular';
   src: url("../fonts/SignikaNegative-Regular.ttf") format("truetype");
@@ -390,75 +436,83 @@ header {
 @font-face {
   font-family: 'Signika Light';
   src: url("../fonts/Signika-Light.otf") format("opentype"); }
-footer {
+/*
+@mixin circle ($width: 20px, $height: 20px, $border-radius: 10px) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+*/
+.footer {
   background-color: #fcfae8;
   padding: 3% 14% 8.2% 14%;
   font-family: "SignikaNegative Regular", sans-serif;
-  overflow: hidden;
-  font-style: italic; }
-  footer a {
-    text-decoration: none;
-    color: #cccabc; }
-  footer .list-ref {
-    float: left;
-    width: 33%;
+  font-style: italic;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch; }
+  .footer .list-ref {
     line-height: 2.5;
     font-size: 1.3em; }
-  footer .short-info {
-    float: left;
-    width: 25%;
-    line-height: 1.8; }
-    footer .short-info article {
-      color: #cccabc;
-      font-size: 1.2em; }
-    footer .short-info span {
+    .footer .list-ref a {
+      text-decoration: none;
+      color: #cccabc; }
+  .footer .short-info {
+    width: 23%; }
+    .footer .short-info span {
       font-size: 2.4em;
       display: inline-block;
       font-weight: bold;
       font-style: normal;
-      margin-bottom: 0.5%; }
-  footer .social-block {
-    float: right;
-    width: 25%;
+      margin-bottom: 5%; }
+    .footer .short-info article {
+      color: #cccabc;
+      font-size: 1.2em; }
+  .footer .social-block {
     font-style: normal;
-    padding-top: 2%; }
-    footer .social-block .social-pics {
-      float: right;
-      margin-bottom: 30%; }
-      footer .social-block .social-pics li {
+    display: flex;
+    flex-direction: column; }
+    .footer .social-block .social-pics {
+      margin-bottom: 30%;
+      display: flex;
+      justify-content: flex-end; }
+      .footer .social-block .social-pics a {
+        color: #696863;
+        text-decoration: none;
+        font-weight: bold;
         display: inline-block;
-        margin-right: 1%; }
-      footer .social-block .social-pics li:last-child {
-        margin-right: 0; }
-      footer .social-block .social-pics a {
-        color: #696863; }
-    footer .social-block .subscribe::-webkit-input-placeholder {
-      color: #555554;
-      text-align: right;
-      font-weight: bold; }
-    footer .social-block .subscribe:-moz-placeholder {
-      text-align: right; }
-    footer .social-block .subscribe::-moz-placeholder {
-      text-align: right; }
-    footer .social-block .subscribe:-ms-input-placeholder {
-      text-align: right; }
-    footer .social-block input {
-      float: right;
-      border: none;
-      background-color: #fcfae8;
-      border-bottom: 2px solid #fcd800;
-      width: 90%;
-      font-size: 2em;
-      padding-bottom: 3%; }
-    footer .social-block .send {
-      background-color: #fcfae8;
-      border: none;
-      float: right;
-      color: #4bb44b;
-      font-weight: bold;
-      font-family: "SignikaNegative Bold", sans-serif;
-      font-size: 1.5em;
-      cursor: pointer; }
+        margin-right: 5%; }
+    .footer .social-block .subscribe-form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      .footer .social-block .subscribe-form .subscribe {
+        border: none;
+        background-color: #fcfae8;
+        border-bottom: 2px solid #fcd800;
+        font-size: 2em;
+        padding-bottom: 3%; }
+      .footer .social-block .subscribe-form .subscribe::-webkit-input-placeholder {
+        color: #555554;
+        text-align: right;
+        font-weight: bold; }
+      .footer .social-block .subscribe-form .subscribe:-moz-placeholder {
+        text-align: right; }
+      .footer .social-block .subscribe-form .subscribe::-moz-placeholder {
+        text-align: right; }
+      .footer .social-block .subscribe-form .subscribe:-ms-input-placeholder {
+        text-align: right; }
+      .footer .social-block .subscribe-form .send {
+        background-color: #fcfae8;
+        border: none;
+        color: #4bb44b;
+        font-family: "SignikaNegative Bold", sans-serif;
+        font-size: 1.5em;
+        cursor: pointer; }
 
 nav {
   margin-bottom: 2.9%;
@@ -466,7 +520,8 @@ nav {
   nav a {
     color: #0b0b0b;
     margin-right: 5%;
-    display: inline-block; }
+    display: inline-block;
+    text-decoration: none; }
   nav a:last-child {
     margin-right: 0; }
 
@@ -488,6 +543,16 @@ nav {
 @font-face {
   font-family: 'Signika Light';
   src: url("../fonts/Signika-Light.otf") format("opentype"); }
+/*
+@mixin circle ($width: 20px, $height: 20px, $border-radius: 10px) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+*/
 .advertisement {
   border: 3px solid #f6f6f6;
   position: relative;
@@ -541,6 +606,16 @@ nav {
 @font-face {
   font-family: 'Signika Light';
   src: url("../fonts/Signika-Light.otf") format("opentype"); }
+/*
+@mixin circle ($width: 20px, $height: 20px, $border-radius: 10px) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+*/
 .sidebar {
   border: 3px solid #f6f6f6;
   overflow: hidden;
@@ -563,18 +638,17 @@ nav {
     font-size: 2.8em;
     font-family: "SignikaNegative Bold", sans-serif; }
   .sidebar article {
-    width: 43%;
-    border-bottom: 2px solid #000000;
-    margin-left: 29%;
+    width: 32%;
+    border-bottom: 2px solid #000;
+    margin-left: 34%;
     margin-bottom: 5%; }
   .sidebar span {
     font-family: "SignikaNegative Regular", sans-serif;
     font-size: 1.1em;
     display: block;
     margin-bottom: 12%; }
-  .sidebar a {
+  .sidebar button {
     margin: 0 auto;
-    display: block;
     padding: 3.2%;
     font-family: "SignikaNegative Regular", sans-serif;
     font-size: 1.5em;
@@ -582,41 +656,39 @@ nav {
     border-radius: 28px;
     border: none;
     width: 55%;
-    text-decoration: none;
-    color: #222222; }
+    color: #222222;
+    cursor: pointer; }
   .sidebar .textOnImg {
     position: absolute;
     top: 10%;
-    right: 28%;
-    color: #ffffff;
+    right: 31%;
+    color: #fff;
     line-height: 1; }
     .sidebar .textOnImg h2 {
-      font-size: 6em;
+      font-size: 7em;
       text-shadow: 6px 0 2px #dcdcdc; }
     .sidebar .textOnImg span {
-      font-size: 2.5em;
+      font-size: 3.5em;
       text-shadow: 2px 2px 2px #dcdcdc; }
-  .sidebar .onclickButtonImg {
-    background-color: #2b6133; }
-  .sidebar .onclickButtonBeforeA {
+  .sidebar .onclickButtonBackground {
+    background-color: #4bb44b; }
+  .sidebar .onclickButtonBefore {
     content: ' ';
     width: 25px;
-    height: 25px;
     display: inline-block;
     background: url(../images/heart.png) 35px 17px no-repeat; }
-  .sidebar .onclickButtonA {
+  .sidebar .onclickButton {
     padding: 3.2%;
-    background-color: #5bcf6c;
+    background-color: #4bb44b;
     box-shadow: 0 3px 3px 0 #3db04e;
-    color: #ffffff;
-    display: block;
+    color: #fff;
     margin: 0 auto;
     font-family: "SignikaNegative Regular", sans-serif;
     font-size: 1.5em;
     border-radius: 28px;
     border: none;
     width: 55%;
-    text-decoration: none; }
+    cursor: pointer; }
 
 @font-face {
   font-family: 'SignikaNegative Regular';
@@ -636,6 +708,16 @@ nav {
 @font-face {
   font-family: 'Signika Light';
   src: url("../fonts/Signika-Light.otf") format("opentype"); }
+/*
+@mixin circle ($width: 20px, $height: 20px, $border-radius: 10px) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+*/
 .list-of-popular {
   margin: 0 10% 12% 10%;
   text-transform: uppercase;
@@ -708,46 +790,78 @@ nav {
 @font-face {
   font-family: 'Signika Light';
   src: url("../fonts/Signika-Light.otf") format("opentype"); }
+/*
+@mixin circle ($width: 20px, $height: 20px, $border-radius: 10px) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+*/
 .basket-form {
   position: absolute;
-  top: 6.20%;
+  top: 5.9%;
   right: 2.60%;
-  z-index: 10; }
+  z-index: 10;
+  min-width: 700px;
+  /*
+  
+  // ╨╡╤Б╨╗╨╕ ╨╜╤Г╨╢╨╜╨╛ ╨▓╤Л╨┤╨╡╨╗╨╡╨╜╨╕╨╡ ╤А╨░╨╖╨╜╤Л╨╝ ╤Ж╨▓╨╡╤В╨╛╨╝ ╤З╨╡╤А╨╡╨╖ ╨╛╨┤╨╕╨╜ li, ╨░ ╨╜╨╡ ╨┐╤А╨╕ hover
+  
+      li:nth-child(2n) {
+        background-color: $green;
+        color: #fff;
+      }
+  
+      li:nth-child(2n) .basket-product-photo {
+        background-color: #8b8b8b;
+      }
+  
+      li:nth-child(2n) .basket-product-number {
+        border-right: 1px solid #fff;
+      }
+  */ }
   .basket-form li {
+    display: flex;
     font-family: "Signika Light", sans-serif;
     font-size: 1.5em;
-    background-color: #fbfaf1;
-    height: 30%; }
+    background-color: #fbfaf1; }
     .basket-form li .basket-product-photo {
       max-width: 145px;
       width: 145px;
       height: 90px;
-      background-color: #787878;
-      vertical-align: top; }
+      background-color: #787878; }
     .basket-form li .block {
-      padding: 3%;
-      display: inline-block;
-      vertical-align: top; }
-      .basket-form li .block .basket-product-name {
-        margin-right: 15%; }
+      display: inline-flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 3%; }
       .basket-form li .block .basket-product-number {
         font-size: 0.8em;
         padding-right: 3%;
-        border-right: 1px solid #000;
-        margin-right: 3%; }
+        border-right: 1px solid #000; }
       .basket-form li .block .basket-product-price {
         font-family: "SignikaNegative Bold", sans-serif;
-        font-size: 1.2em;
-        margin-right: 10%; }
-      .basket-form li .block img {
-        text-align: right; }
-  .basket-form li:nth-child(2n) {
+        font-size: 1.2em; }
+      .basket-form li .block .basket-pict {
+        background: url(../images/basket-pict-crest-green.png) 0 0 no-repeat;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        border: none; }
+  .basket-form li:hover {
     background-color: #4bb44b;
     color: #fff; }
-  .basket-form li:nth-child(2n) .basket-product-photo {
+  .basket-form li:hover .basket-product-photo {
     background-color: #8b8b8b; }
-  .basket-form li:nth-child(2n) .basket-product-number {
+  .basket-form li:hover .basket-product-number {
     border-right: 1px solid #fff; }
+  .basket-form li:hover .basket-pict {
+    background: url(../images/basket-pict-crest-white.png) 0 0 no-repeat; }
   .basket-form .basket-total-info {
     background-color: #fff;
     padding: 3%;
@@ -767,13 +881,14 @@ nav {
       margin-right: 0; }
     .basket-form .basket-total-info .basket-total-price {
       font-weight: bold; }
-    .basket-form .basket-total-info a {
-      display: inline-block;
+    .basket-form .basket-total-info button {
+      border: none;
       background-color: #4bb44b;
       border-radius: 5px;
       color: #fff;
       padding: 2% 4%;
-      text-decoration: none; }
+      font-family: "SignikaNegative Regular", sans-serif;
+      font-size: 1.2em; }
     .basket-form .basket-total-info img {
       margin-right: 4%;
       vertical-align: middle; }
@@ -784,20 +899,20 @@ body {
   body .wrapper {
     position: relative;
     padding-bottom: 7%; }
-    body .wrapper .main {
-      border: 10px solid #faf6d6;
+    body .wrapper .border {
+      border: 10px solid rgba(250, 246, 214, 0.4);
       margin: 2%; }
-      body .wrapper .main .hide {
-        display: none; }
-      body .wrapper .main .content {
-        background-color: #ffffff;
-        text-align: center;
+    body .wrapper .main .hide {
+      display: none; }
+    body .wrapper .main .content {
+      background-color: #ffffff;
+      text-align: center;
+      overflow: hidden;
+      padding: 4%; }
+      body .wrapper .main .content .container {
         overflow: hidden;
-        padding: 4%; }
-        body .wrapper .main .content .container {
-          overflow: hidden;
-          display: flex;
-          margin-bottom: 7%; }
+        display: flex;
+        margin-bottom: 7%; }
     body .wrapper .substrate {
       height: 35%;
       position: absolute;

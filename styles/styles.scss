@@ -21,9 +21,12 @@ body {
     position: relative;
     padding-bottom: 7%;
 
-    .main {
-      border: 10px solid #faf6d6;
+    .border {
+      border: 10px solid rgba(250, 246, 214, 0.4);
       margin: 2%;
+    }
+
+    .main {
 
       .hide {
         display: none;
