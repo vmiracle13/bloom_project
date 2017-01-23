@@ -52,8 +52,6 @@ body {
     margin: 2%;
     padding: 3% 5%;
     background-color: #fff; }
-    body .wrapper .main .hide {
-      display: none; }
     body .wrapper .main nav {
       margin: 2% 2% 4% 2%;
       text-align: center;
@@ -65,75 +63,98 @@ body {
         text-decoration: none; }
       body .wrapper .main nav a:last-child {
         margin-right: 0; }
-    body .wrapper .main ul {
-      display: flex;
-      flex-flow: row wrap; }
-      body .wrapper .main ul li {
-        border: 1px solid #f6f6f6;
-        display: inline-block;
-        text-align: center;
-        margin: 0 3% 3% 0;
-        font-size: 1.2em;
-        cursor: pointer;
-        tab-index: 1;
-        padding-bottom: 2%; }
-        body .wrapper .main ul li img {
-          background-color: #787878;
-          display: block;
-          margin-bottom: 20px; }
-        body .wrapper .main ul li .small {
-          width: 320px;
-          height: 250px; }
-        body .wrapper .main ul li .big {
-          width: 520px;
-          height: 280px; }
-        body .wrapper .main ul li .product-price {
-          font-weight: 900; }
-        body .wrapper .main ul li .product-name {
-          text-transform: uppercase;
-          display: block;
-          margin-bottom: 5%; }
-        body .wrapper .main ul li a {
+    body .wrapper .main ul li {
+      border: 1px solid #f6f6f6;
+      display: inline-block;
+      text-align: center;
+      margin: 0 2.5% 3% 0;
+      font-size: 1.2em;
+      cursor: pointer;
+      padding-bottom: 2%;
+      position: relative;
+      vertical-align: top; }
+      body .wrapper .main ul li img {
+        background-color: #787878;
+        display: block;
+        margin-bottom: 20px; }
+      body .wrapper .main ul li .small {
+        width: 320px;
+        height: 250px; }
+      body .wrapper .main ul li .big {
+        width: 520px;
+        height: 280px; }
+      body .wrapper .main ul li .currency {
+        font-size: 0.9em;
+        font-family: "SignikaNegative Bold", sans-serif; }
+      body .wrapper .main ul li .product-price {
+        font-weight: 900; }
+      body .wrapper .main ul li .product-name {
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 18%; }
+      body .wrapper .main ul li button {
+        position: absolute;
+        bottom: 5%;
+        left: 27%;
+        background-color: #4bb44b;
+        border-radius: 5px;
+        color: #fff;
+        padding: 4% 10%;
+        border: none;
+        font-size: 0.9em;
+        font-family: "SignikaNegative Regular", sans-serif;
+        display: none;
+        cursor: pointer; }
+      body .wrapper .main ul li .color-circles {
+        margin-bottom: 3%; }
+        body .wrapper .main ul li .color-circles .circle {
           display: inline-block;
-          background-color: #4bb44b;
-          border-radius: 5px;
-          color: #fff;
-          padding: 4% 8%;
-          text-decoration: none;
-          font-size: 0.9em; }
-        body .wrapper .main ul li .color-circles {
-          margin-bottom: 3%; }
-          body .wrapper .main ul li .color-circles .circle {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            -moz-border-radius: 15px;
-            -webkit-border-radius: 15px;
-            border-radius: 15px;
-            margin-left: -3%; }
-          body .wrapper .main ul li .color-circles .yellow {
-            background-color: #f7f97c; }
-          body .wrapper .main ul li .color-circles .orange {
-            background-color: #f86f1c; }
-          body .wrapper .main ul li .color-circles .green {
-            background-color: #4bb44b; }
-          body .wrapper .main ul li .color-circles .darkblue {
-            background-color: #509db6; }
-          body .wrapper .main ul li .color-circles .blue {
-            background-color: #54a4f6; }
-          body .wrapper .main ul li .color-circles .magenta {
-            background-color: #eb4a88; }
-          body .wrapper .main ul li .color-circles .lavender {
-            background-color: #94b8d9; }
-      body .wrapper .main ul li:last-child {
-        margin-right: 0; }
-      body .wrapper .main ul .big-block {
-        text-align: left; }
-        body .wrapper .main ul .big-block span {
-          margin-left: 5%; }
-        body .wrapper .main ul .big-block .color-circles {
-          margin-left: 7%; }
-          body .wrapper .main ul .big-block .color-circles .circle {
-            margin-left: -2%; }
+          width: 30px;
+          height: 30px;
+          -moz-border-radius: 15px;
+          -webkit-border-radius: 15px;
+          border-radius: 15px;
+          margin-left: -3%; }
+        body .wrapper .main ul li .color-circles .yellow {
+          background-color: #f7f97c; }
+        body .wrapper .main ul li .color-circles .orange {
+          background-color: #f86f1c; }
+        body .wrapper .main ul li .color-circles .green {
+          background-color: #4bb44b; }
+        body .wrapper .main ul li .color-circles .dark_blue {
+          background-color: #509db6; }
+        body .wrapper .main ul li .color-circles .blue {
+          background-color: #54a4f6; }
+        body .wrapper .main ul li .color-circles .magenta {
+          background-color: #eb4a88; }
+        body .wrapper .main ul li .color-circles .lavender {
+          background-color: #94b8d9; }
+    body .wrapper .main ul li:hover button {
+      display: inline-block; }
+    body .wrapper .main ul li:last-child(n+3) {
+      margin-right: 0; }
+    body .wrapper .main ul li:nth-last-child(-n+3) {
+      padding-bottom: 1%; }
+      body .wrapper .main ul li:nth-last-child(-n+3) span {
+        margin-bottom: 0; }
+    body .wrapper .main ul li:nth-last-child(-n+3):hover .product-name {
+      margin-bottom: 20%; }
+    body .wrapper .main ul .big-block {
+      text-align: left; }
+      body .wrapper .main ul .big-block .currency {
+        margin-left: 5%; }
+      body .wrapper .main ul .big-block .product-name {
+        margin-bottom: 4%;
+        margin-left: 5%; }
+      body .wrapper .main ul .big-block .color-circles {
+        margin-left: 7%; }
+        body .wrapper .main ul .big-block .color-circles .circle {
+          margin-left: -2%; }
+      body .wrapper .main ul .big-block button {
+        bottom: 12%;
+        left: 60%;
+        padding: 3% 8%;
+        font-size: 1em;
+        display: none; }
 
 /*# sourceMappingURL=wearables_styles.css.map */

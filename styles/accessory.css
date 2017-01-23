@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'SignikaNegative Regular';
+  src: url("../fonts/SignikaNegative-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'SignikaNegative Bold';
+  src: url("../fonts/SignikaNegative-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'SignikaNegative Light';
+  src: url("../fonts/SignikaNegative-Light.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'Signika Light';
+  src: url("../fonts/Signika-Light.otf") format("opentype"); }
+/*
+@mixin circle ($width: 20px, $height: 20px, $border-radius: 10px) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+*/
+body {
+  background-color: #fcfaec;
+  font: 100% "SignikaNegative Regular", sans-serif; }
+  body .wrapper {
+    padding: 2%; }
+    body .wrapper .main {
+      border: 10px solid #faf5d5;
+      padding: 3% 5%; }
+      body .wrapper .main .product {
+        border: 1px solid #f6f6f6;
+        background-color: #fff;
+        overflow: hidden;
+        width: 720px;
+        margin: 0 auto; }
+        body .wrapper .main .product .carousel {
+          width: 720px; }
+          body .wrapper .main .product .carousel ul {
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            width: 9999px;
+            height: 480px;
+            list-style: none;
+            transition: margin-left 250ms; }
+            body .wrapper .main .product .carousel ul li {
+              float: left; }
+              body .wrapper .main .product .carousel ul li img {
+                background-color: #787878;
+                display: block;
+                width: 720px;
+                height: 480px; }
+        body .wrapper .main .product .container {
+          padding: 5%;
+          overflow: hidden; }
+          body .wrapper .main .product .container .section {
+            text-align: left; }
+            body .wrapper .main .product .container .section .color-circles {
+              margin: 0 0 4% 2%; }
+              body .wrapper .main .product .container .section .color-circles .circle {
+                display: inline-block;
+                width: 23px;
+                height: 23px;
+                -moz-border-radius: 20px;
+                -webkit-border-radius: 20px;
+                border-radius: 20px;
+                margin-left: -1.5%; }
+              body .wrapper .main .product .container .section .color-circles .yellow {
+                background-color: #f7f97c; }
+              body .wrapper .main .product .container .section .color-circles .green {
+                background-color: #4bb44b; }
+              body .wrapper .main .product .container .section .color-circles .orange {
+                background-color: #f86f1c; }
+            body .wrapper .main .product .container .section .currency {
+              font-size: 1.1em;
+              font-family: "SignikaNegative Bold", sans-serif; }
+            body .wrapper .main .product .container .section .product-price {
+              font-size: 1.9em;
+              font-family: "SignikaNegative Bold", sans-serif; }
+            body .wrapper .main .product .container .section .product-name {
+              text-transform: uppercase;
+              display: block;
+              font-family: "Signika Light", sans-serif;
+              font-size: 1.6em; }
+          body .wrapper .main .product .container .sidebar {
+            float: right;
+            margin: 0 auto; }
+            body .wrapper .main .product .container .sidebar .radio-buttons {
+              padding: 0;
+              margin: 0 0 12% 30%; }
+              body .wrapper .main .product .container .sidebar .radio-buttons li {
+                display: inline-block;
+                position: relative; }
+                body .wrapper .main .product .container .sidebar .radio-buttons li input {
+                  opacity: 0; }
+                body .wrapper .main .product .container .sidebar .radio-buttons li span {
+                  position: absolute;
+                  cursor: pointer;
+                  display: block;
+                  width: 19px;
+                  height: 19px; }
+                body .wrapper .main .product .container .sidebar .radio-buttons li .checked {
+                  top: 0;
+                  left: 0;
+                  background: url(../images/radiobox-checked.jpg) 0 0 no-repeat; }
+                body .wrapper .main .product .container .sidebar .radio-buttons li .first-after-checked {
+                  top: 23%;
+                  left: 35%;
+                  background: url(../images/radiobox-not-checked-dark.png) 0 0 no-repeat; }
+                body .wrapper .main .product .container .sidebar .radio-buttons li .farthest-checked {
+                  top: 24%;
+                  left: 34%;
+                  background: url(../images/radiobox-not-checked-light.png) 0 0 no-repeat; }
+            body .wrapper .main .product .container .sidebar button {
+              margin: 0 auto;
+              background-color: #fcdb00;
+              border-radius: 5px;
+              padding: 20px 50px;
+              border: none;
+              font-size: 1.4em;
+              font-family: "SignikaNegative Regular", sans-serif;
+              cursor: pointer;
+              text-transform: uppercase;
+              display: block; }
+
+/*# sourceMappingURL=accessory.css.map */

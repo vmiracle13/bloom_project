@@ -97,7 +97,7 @@ body {
                 padding-top: 2%;
 
                 .circle {
-                  @include circle(30px, 30px, 20px);
+                  @include circle();
                   margin-right: -10%;
                 }
                 .yellow {
@@ -164,6 +164,7 @@ body {
           border: none;
           font-family: $font-regular;
           font-size: 1.1em;
+          cursor: pointer;
         }
       }
     }

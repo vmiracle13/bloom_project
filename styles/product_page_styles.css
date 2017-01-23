@@ -144,6 +144,7 @@ body {
           padding: 3% 8%;
           border: none;
           font-family: "SignikaNegative Regular", sans-serif;
-          font-size: 1.1em; }
+          font-size: 1.1em;
+          cursor: pointer; }
 
 /*# sourceMappingURL=product_page_styles.css.map */

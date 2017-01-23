@@ -22,11 +22,11 @@ $light: 'Signika Light', sans-serif;
 
 @mixin circle ($width: 30px, $height: 30px, $border-radius: 15px) {
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
+  width: $width;
+  height: $height;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
 }
 
 @mixin border ($width: 1px, $color: $grey) {

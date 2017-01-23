@@ -6,8 +6,9 @@
     var mainPhoto = document.querySelector('img');
     var selectedPreview = photos.querySelector('img');
     var activeClass = 'onclick';
-    photos.addEventListener("click", choosePreview);
     selectedPreview.classList.add(activeClass);
+
+    photos.addEventListener("click", choosePreview);
 
     function choosePreview(event) {
       var target = event.target;

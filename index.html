@@ -4,10 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="js test" content="Сайт об js">
 
-    <script src="./js/total.js"></script>
-    <script src="./js/login.js"></script>
-    <script src="./js/basket.js"></script>
-    <script src="./js/sidebar.js"></script>
+  <script src="./js/total.js"></script>
 
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <title>mega super js test</title>
@@ -35,31 +32,31 @@
                 <div class="panel">
 
                     <form class="search-field">
-                      <input class="search" name="search" type="search" placeholder="SEARCH">
-                      <span class="search-symbol"></span>
+                        <input class="search" name="search" type="search" placeholder="SEARCH">
+                        <span class="search-symbol"></span>
                     </form>
+
+                  <div class="login-and-basket">
+                    <button class="loginButton">
+                      <span class="loginImg"></span>
+                    </button>
+
+                    <button class="basketButton">
+                      <span class="basketImg"></span>
+                      <span class="chosen-product-number">5</span>
+                    </button>
+                  </div>
 
                     <h1 class="logo">
                       <a href="#">bloom CO.NCEPT</a>
                     </h1>
 
-                    <div class="login-and-basket">
-                        <button class="loginButton">
-                          <span class="loginImg"></span>
-                        </button>
-
-                        <button class="basketButton">
-                          <span class="basketImg"></span>
-                          <span class="chosen-product-number">5</span>
-                        </button>
-                    </div>
-
-                      <form class="login-form hide">
+                    <form class="login-form hide">
                           <div class="wrap">
                             <span class="login-title">Login Panel</span>
                             <input name="loginField" type="text">
                             <input name="passwordField" type="password" class="input-password">
-                            <button>Sign in</button>
+                            <button class="signIn">Sign in</button>
                             <span class="line"></span>
                             <span class="text-before-socials">or sign in with</span>
                           </div>
@@ -67,7 +64,7 @@
                           <a href="#" class="right"></a>
                       </form>
 
-                      <form class="basket-form hide">
+                    <form class="basket-form hide">
                       <ul>
                         <li>
                           <img class="basket-product-photo" src="" alt="">
@@ -112,9 +109,9 @@
                 <div class="content">
                     <nav>
                         <a href="#">Furniture</a>
-                        <a href="#">Wearables</a>
+                        <a href="wearables.html">Wearables</a>
                         <a href="#">Bicycle</a>
-                        <a href="#">Accessory</a>
+                        <a href="accessory.html">Accessory</a>
                         <a href="#">Lighting</a>
                     </nav>
 
@@ -125,7 +122,7 @@
                                 <span>A New Generation of Saddles</span>
                                 <figcaption>Cambium is crafted from high-quality materials</figcaption>
                             </figure>
-                            <a href="#"><pre>Go to Sale it   ></pre></a>
+                            <a href="#">Go to Sale it&nbsp;&nbsp;&nbsp;></a>
                         </div>
 
                         <div class="sidebar">
@@ -157,35 +154,35 @@
                                     <figure>
                                         <img src="images/closer.png" alt="Cambium is crafted">
                                         <figcaption>Cambium is crafted</figcaption>
-                                        <figcaption>look <a href="#">closer</a></figcaption>
+                                        <figcaption>look <a href="product.html">closer</a></figcaption>
                                     </figure>
                                 </li>
                                 <li>
                                     <figure>
                                         <img src="images/closer.png" alt="Cambium is crafted">
                                         <figcaption>Cambium is crafted</figcaption>
-                                        <figcaption>look <a href="#">closer</a></figcaption>
+                                        <figcaption>look <a href="product.html">closer</a></figcaption>
                                     </figure>
                                 </li>
                                 <li>
                                     <figure>
                                         <img src="images/closer.png" alt="Cambium is crafted">
                                         <figcaption>Cambium is crafted</figcaption>
-                                        <figcaption>look <a href="#">closer</a></figcaption>
+                                        <figcaption>look <a href="product.html">closer</a></figcaption>
                                     </figure>
                                 </li>
                                 <li>
                                     <figure>
                                         <img src="images/closer.png" alt="Cambium is crafted">
                                         <figcaption>Cambium is crafted</figcaption>
-                                        <figcaption>look <a href="#">closer</a></figcaption>
+                                        <figcaption>look <a href="product.html">closer</a></figcaption>
                                     </figure>
                                 </li>
                                 <li>
                                     <figure>
                                         <img src="images/closer.png" alt="Cambium is crafted">
                                         <figcaption>Cambium is crafted</figcaption>
-                                        <figcaption>look <a href="#">closer</a></figcaption>
+                                        <figcaption>look <a href="product.html">closer</a></figcaption>
                                     </figure>
                                 </li>
                             </ul>
@@ -227,5 +224,8 @@
 
     </div>
 
+    <script src="./js/login.js"></script>
+    <script src="./js/basket.js"></script>
+    <script src="./js/sidebar.js"></script>
 </body>
 </html>

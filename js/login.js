@@ -6,16 +6,17 @@
 
   window.onload = function() {
 
+
+    alert('errr');
     var loginButton = document.querySelector('.loginButton');
     var loginForm = document.querySelector('.login-form');
     var loginImgButton = loginButton.querySelector('.loginImg');
 
-
     loginButton.addEventListener("click", openLoginForm);
 
     function openLoginForm(event) {
-      loginButton.classList.toggle('greenBckgr');
-      loginImgButton.classList.toggle('changeLoginSymbol');
+      loginButton.classList.toggle('.greenBckgr');
+      loginImgButton.classList.toggle('.changeLoginSymbol');
       loginForm.classList.toggle('hide');
     }
   };

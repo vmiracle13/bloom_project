@@ -1,0 +1,157 @@
+@import 'variables';
+
+
+body {
+  background-color: $backgrcolor;
+  font: 100% $font-regular;
+
+  .wrapper {
+      padding: 2%;
+
+      .main {
+          @include border(10px, $cream_border);
+          padding: 3% 5%;
+
+          .product {
+              @include border();
+              background-color: #fff;
+              overflow: hidden;
+              width: 720px;
+              margin: 0 auto;
+
+              .carousel {
+                  width: 720px;
+
+                  ul {
+                    overflow: hidden;
+                      padding: 0;
+                      margin: 0;
+                      width: 9999px;
+                      height: 480px;
+                      list-style: none;
+                      transition: margin-left 250ms;
+
+                      li {
+                        float: left;
+
+                        img {
+                          background-color: $dark_grey;
+                          display: block;
+                          width: 720px;
+                          height: 480px;
+                        }
+                      }
+                  }
+
+              }
+
+              .container {
+                  padding: 5%;
+                  overflow: hidden;
+
+                  .section {
+                    text-align: left;
+
+                    .color-circles {
+                      margin: 0 0 4% 2%;
+
+                      .circle {
+                        @include circle(23px, 23px, 20px);
+                        margin-left: -1.5%;
+                      }
+
+                      .yellow {
+                        background-color: $light_yellow;
+                      }
+                      .green {
+                        background-color: $green;
+                      }
+                      .orange {
+                        background-color: $orange;
+                      }
+                    }
+
+                    .currency {
+                      font-size: 1.1em;
+                      font-family: $font-bold;
+                    }
+
+                    .product-price {
+                      font-size: 1.9em;
+                      font-family: $font-bold;
+                    }
+
+                    .product-name {
+                      text-transform: uppercase;
+                      display: block;
+                      font-family: $light;
+                      font-size: 1.6em;
+                    }
+                  }
+
+                  .sidebar {
+                      float: right;
+                      margin: 0 auto;
+
+                      .radio-buttons {
+                          padding: 0;
+                          margin: 0 0 12% 30%;
+
+                          li {
+                              display: inline-block;
+                              position: relative;
+
+                              input {
+                                opacity: 0;
+                              }
+
+                              span {
+                                position: absolute;
+                                cursor: pointer;
+                                display: block;
+                                width: 19px;
+                                height: 19px;
+                              }
+
+                              .checked {
+                                  top: 0;
+                                  left: 0;
+                                  background: url(../images/radiobox-checked.jpg) 0 0 no-repeat;
+                              }
+
+                              .first-after-checked {
+                                  top: 23%;
+                                  left: 35%;
+                                  background: url(../images/radiobox-not-checked-dark.png) 0 0 no-repeat;
+                              }
+
+                              .farthest-checked {
+                                  top: 24%;
+                                  left: 34%;
+                                  background: url(../images/radiobox-not-checked-light.png) 0 0 no-repeat;
+                              }
+                          }
+                      }
+
+                      button {
+                          margin: 0 auto;
+                          background-color: $yellow;
+                          border-radius: 5px;
+                          padding: 20px 50px;
+                          border: none;
+                          font-size: 1.4em;
+                          font-family: $font-regular;
+                          cursor: pointer;
+                          text-transform: uppercase;
+                          display: block;
+                      }
+                }
+              }
+        }
+      }
+  }
+}
+
+
+
+
