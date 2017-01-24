@@ -3,9 +3,10 @@
 .basket-form {
     position: absolute;
     top: 5.9%;
-    right: 2.60%;
+    right: 0;
     z-index: 10;
     min-width: 700px;
+    display: none;
 
     li {
           display: flex;
@@ -123,6 +124,7 @@
           padding: 2% 4%;
           font-family: $font-regular;
           font-size: 1.2em;
+          cursor: pointer;
         }
 
         img {
@@ -131,3 +133,7 @@
         }
     }
   }
+
+.visible {
+  display: block;
+}

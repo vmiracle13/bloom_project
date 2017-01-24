@@ -173,22 +173,20 @@ header {
     float: left;
     margin: 2.5% 0 0 3%;
     position: relative; }
-    .panel .search-field input {
+    .panel .search-field .search {
       background-color: #222222;
       border: none;
       color: #fff;
       text-transform: uppercase;
       padding: 20px 20px;
-      border-radius: 5px;
-      transition-timing-function: ease-in-out;
-      transition-duration: 5s; }
-    .panel .search-field input::-webkit-input-placeholder {
+      border-radius: 5px; }
+    .panel .search-field .search::-webkit-input-placeholder {
       color: #e8e8e8; }
-    .panel .search-field input:-moz-placeholder {
+    .panel .search-field .search:-moz-placeholder {
       color: #e8e8e8; }
-    .panel .search-field input::-moz-placeholder {
+    .panel .search-field .search::-moz-placeholder {
       color: #e8e8e8; }
-    .panel .search-field input:-ms-input-placeholder {
+    .panel .search-field .search:-ms-input-placeholder {
       color: #e8e8e8; }
     .panel .search-field .search-symbol {
       background: url(../images/search.png) 0 0 no-repeat;
@@ -197,80 +195,85 @@ header {
       right: 3%;
       height: 30px;
       width: 30px; }
-    .panel .search-field input:hover {
+    .panel .search-field .search:hover {
       width: 315px; }
-  .panel .logo {
+  .panel .logotype {
     background: url(../images/logo-small.png) 0 40px no-repeat;
     width: 123px;
     height: 59px;
     margin: 0 auto;
     padding: 2% 0; }
-    .panel .logo a {
+    .panel .logotype a {
       text-indent: -9999px;
       height: 100%;
       display: block; }
   .panel .login-and-basket {
     float: right;
     display: flex; }
-    .panel .login-and-basket button {
+    .panel .login-and-basket .blackBlock {
       border: none;
       background-color: #000;
+      cursor: pointer;
       width: 130px;
-      height: 130px;
-      cursor: pointer; }
-    .panel .login-and-basket .loginButton {
-      position: relative;
-      border-right: 1px solid #fcdb00; }
-      .panel .login-and-basket .loginButton .loginImg {
+      height: 130px; }
+    .panel .login-and-basket .greenBckgr {
+      background-color: #4bb44b; }
+    .panel .login-and-basket .login-block {
+      margin-right: 0.5%; }
+      .panel .login-and-basket .login-block .loginImg {
         background: url(../images/login.png) 0 0 no-repeat;
         width: 42px;
         height: 32px;
         position: absolute;
-        top: 35%;
-        right: 30%; }
-    .panel .login-and-basket .basketButton {
-      position: relative; }
-      .panel .login-and-basket .basketButton .basketImg {
+        top: 2.3%;
+        right: 11.3%; }
+      .panel .login-and-basket .login-block .changeLoginSymbol {
+        background: url(../images/login-onclick.png) 0 0 no-repeat;
+        position: absolute;
+        width: 42px;
+        height: 38px;
+        top: 2.1%;
+        right: 11.3%; }
+    .panel .login-and-basket .login-block:hover > .login-form {
+      display: block; }
+    .panel .login-and-basket .basket-block {
+      width: 130px;
+      height: 130px; }
+      .panel .login-and-basket .basket-block .basketImg {
         background: url(../images/basket.png) 0 0 no-repeat;
         width: 30px;
         height: 35px;
         position: absolute;
-        top: 32%;
-        right: 40%; }
-      .panel .login-and-basket .basketButton .chosen-product-number {
+        top: 2%;
+        right: 3.5%; }
+      .panel .login-and-basket .basket-block .changeBasketSymbol {
+        background: url(../images/basket-onclick.png) 0 0 no-repeat;
+        position: absolute;
+        background-size: 70%;
+        top: 2%;
+        right: 2.2%;
+        height: 54px;
+        width: 47px; }
+      .panel .login-and-basket .basket-block .chosen-product-number {
         display: inline-block;
-        width: 30px;
-        height: 30px;
-        -moz-border-radius: 15px;
-        -webkit-border-radius: 15px;
-        border-radius: 15px;
+        width: 25px;
+        height: 25px;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
         background-color: #4bb44b;
         position: absolute;
-        top: 49%;
-        right: 25%;
+        top: 3.1%;
+        right: 2.4%;
         color: #fff;
-        line-height: 1.7;
-        font-size: 1.3em;
-        font-family: "SignikaNegative Bold", sans-serif; }
-  .panel .changeLoginSymbol {
-    background: url(../images/login-onclick.png) 0 0 no-repeat;
-    position: absolute;
-    width: 42px;
-    height: 38px;
-    top: 35%;
-    right: 30%; }
-  .panel .changeBasketSymbol {
-    background: url(../images/basket-onclick.png) 0 0 no-repeat;
-    position: absolute;
-    background-size: 70%;
-    top: 32%;
-    right: 30%;
-    height: 54px;
-    width: 47px; }
-  .panel .greenBckgr {
-    background-color: #4bb44b; }
-  .panel .chosen-product-number-onclick {
-    background-color: #fcdb00; }
+        font-size: 1.1em;
+        font-family: "SignikaNegative Bold", sans-serif;
+        text-align: center; }
+      .panel .login-and-basket .basket-block .chosen-product-number-onclick {
+        background-color: #fcdb00;
+        color: #222222; }
+    .panel .login-and-basket .basket-block:hover .basket-form {
+      display: block; }
 
 @font-face {
   font-family: 'SignikaNegative Regular';
@@ -322,21 +325,22 @@ header {
   content: '';
   position: absolute;
   right: 44%;
-  top: -6.3%;
+  top: -6%;
   border: 20px solid transparent;
   border-bottom: 20px solid #faf8e9; }
 
 .login-form {
   background-color: #faf8e9;
-  height: 26%;
-  width: 25%;
   position: absolute;
   z-index: 10;
   border: 1px solid #f6f6f6;
   color: #222222;
-  top: 6.2%;
-  right: 3.2%;
-  font-family: "Signika Light", sans-serif; }
+  font-family: "Signika Light", sans-serif;
+  height: 640px;
+  width: 390px;
+  top: 130px;
+  right: 0;
+  display: none; }
   .login-form .wrap {
     padding: 17% 0.5% 0 14.5%; }
   .login-form span {
@@ -367,7 +371,7 @@ header {
     letter-spacing: 0.1em;
     font-size: 1.8em;
     padding: 5% 4%; }
-  .login-form button {
+  .login-form .signIn {
     text-transform: uppercase;
     background-color: #fcdb00;
     border-radius: 35px;
@@ -461,7 +465,8 @@ header {
       text-decoration: none;
       color: #cccabc; }
   .footer .short-info {
-    width: 23%; }
+    width: 23%;
+    margin-left: 10%; }
     .footer .short-info span {
       font-size: 2.4em;
       display: inline-block;
@@ -490,7 +495,8 @@ header {
       padding-bottom: 3%;
       display: block;
       width: 80%;
-      margin-left: 20%; }
+      margin-left: 20%;
+      color: #787878; }
     .footer .social-block .subscribe-form .subscribe::-webkit-input-placeholder {
       color: #787878;
       text-align: right;
@@ -798,9 +804,10 @@ nav {
 .basket-form {
   position: absolute;
   top: 5.9%;
-  right: 2.60%;
+  right: 0;
   z-index: 10;
   min-width: 700px;
+  display: none;
   /*
   
   // ╨╡╤Б╨╗╨╕ ╨╜╤Г╨╢╨╜╨╛ ╨▓╤Л╨┤╨╡╨╗╨╡╨╜╨╕╨╡ ╤А╨░╨╖╨╜╤Л╨╝ ╤Ж╨▓╨╡╤В╨╛╨╝ ╤З╨╡╤А╨╡╨╖ ╨╛╨┤╨╕╨╜ li, ╨░ ╨╜╨╡ ╨┐╤А╨╕ hover
@@ -883,10 +890,14 @@ nav {
       color: #fff;
       padding: 2% 4%;
       font-family: "SignikaNegative Regular", sans-serif;
-      font-size: 1.2em; }
+      font-size: 1.2em;
+      cursor: pointer; }
     .basket-form .basket-total-info img {
       margin-right: 4%;
       vertical-align: middle; }
+
+.visible {
+  display: block; }
 
 body {
   background-color: #fcfaec;

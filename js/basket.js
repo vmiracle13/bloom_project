@@ -3,22 +3,34 @@
  */
 ;(function() {
 
-  window.onload = function() {
+  document.addEventListener("DOMContentLoaded", function() {
 
-    var basketSymbol = document.querySelector('.basket');
-    var basketImgSymbol = document.querySelector('.basketImg');
-    var basketForm = document.querySelector('.basket-form');
-    var numberOfChosenProducts = document.querySelector('chosen-product-number');
+      var basketBlock = document.querySelector('.basket-block');
+      var basketForm = basketBlock.querySelector('.basket-form');
+      var basketImg = basketBlock.querySelector('.basketImg');
+      var productNumber = basketBlock.querySelector('.chosen-product-number');
 
-    basketSymbol.addEventListener("click", handler1);
-    basketImgSymbol.addEventListener("click", handler1);
+      basketBlock.addEventListener("click", openBasketForm);
 
-    function handler1(event) {
-      basketForm.classList.toggle('hide');
-      numberOfChosenProducts.classList.toggle('chosen-product-number-onclick');
-      basketSymbol.classList.toggle('greenBckgr');
-      basketImgSymbol.classList.toggle('changeBasketSymbol');
-    }
+      function openBasketForm(event) {
 
-  };
+          var target = event.target;
+
+          if (target.tagName == "DIV" && target.classList.contains('basket-block') || (target.tagName == 'SPAN') && target.classList.contains('basketImg')) {
+
+              basketBlock.classList.toggle('greenBckgr');
+              basketImg.classList.toggle('changeBasketSymbol');
+              productNumber.classList.toggle('chosen-product-number-onclick');
+
+              basketBlock.classList.add('clicked');
+
+              if (basketBlock.classList.contains('clicked')) {
+                basketForm.classList.toggle('visible');
+              }
+          } else {
+            return;
+          }
+
+      }
+  });
 }());

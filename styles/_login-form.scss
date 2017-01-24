@@ -5,22 +5,24 @@
   content: '';
   position: absolute;
   right: 44%;
-  top: -6.3%;
+  top: -6%;
   border: 20px solid transparent;
   border-bottom: 20px solid #faf8e9;
 }
 
 .login-form {
   background-color: #faf8e9;
-  height: 26%;
-  width: 25%;
   position: absolute;
   z-index: 10;
   border: 1px solid $grey;
   color: $black;
-  top: 6.2%;
-  right: 3.2%;
   font-family: $light;
+
+  height: 640px;
+  width: 390px;
+  top: 130px;
+  right: 0;
+  display: none;
 
   .wrap {
     padding: 17% 0.5% 0 14.5%;
@@ -64,7 +66,7 @@
     padding: 5% 4%;
   }
 
-  button {
+  .signIn {
     text-transform: uppercase;
     background-color: $yellow;
     border-radius: 35px;

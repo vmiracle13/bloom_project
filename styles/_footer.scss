@@ -22,6 +22,7 @@
 
     .short-info {
       width: 23%;
+      margin-left: 10%;
 
       span {
         font-size: 2.4em;
@@ -64,6 +65,7 @@
               display: block;
               width: 80%;
               margin-left: 20%;
+              color: $dark_grey;
             }
             .subscribe::-webkit-input-placeholder {
               color: $dark_grey;

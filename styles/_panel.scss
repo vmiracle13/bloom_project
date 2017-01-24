@@ -9,27 +9,25 @@
         margin: 2.5% 0 0 3%;
         position: relative;
 
-        input {
+        .search {
           background-color: $black;
           border: none;
           color: #fff;
           text-transform: uppercase;
           padding: 20px 20px;
           border-radius: 5px;
-          transition-timing-function: ease-in-out;
-          transition-duration: 5s;
         }
 
-        input::-webkit-input-placeholder {
+        .search::-webkit-input-placeholder {
           color: #e8e8e8;
         }
-        input:-moz-placeholder {
+        .search:-moz-placeholder {
           color: #e8e8e8;
         }
-        input::-moz-placeholder {
+        .search::-moz-placeholder {
           color: #e8e8e8;
         }
-        input:-ms-input-placeholder {
+        .search:-ms-input-placeholder {
           color: #e8e8e8;
         }
 
@@ -42,12 +40,12 @@
           width: 30px;
         }
 
-        input:hover {
+        .search:hover {
           width: 315px;
         }
     }
 
-    .logo {
+    .logotype {
         background: url(../images/logo-small.png) 0 40px no-repeat;
         width: 123px;
         height: 59px;
@@ -65,79 +63,94 @@
         float: right;
         display: flex;
 
-        button {
+        .blackBlock {
           border: none;
           background-color: #000;
+          cursor: pointer;
           width: 130px;
           height: 130px;
-          cursor: pointer;
         }
 
-        .loginButton {
-            position: relative;
-            border-right: 1px solid $yellow;
+        //for js for opening login form and basket form
+        .greenBckgr {
+          background-color: $green;
+        }
+
+        .login-block {
+            margin-right: 0.5%;
 
             .loginImg {
               background: url(../images/login.png) 0 0 no-repeat;
               width: 42px;
               height: 32px;
               position: absolute;
-              top: 35%;
-              right: 30%;
+              top: 2.3%;
+              right: 11.3%;
+            }
+
+          //for js during opening login form
+            .changeLoginSymbol {
+              background: url(../images/login-onclick.png) 0 0 no-repeat;
+              position: absolute;
+              width: 42px;
+              height: 38px;
+              top: 2.1%;
+              right: 11.3%;
             }
         }
 
-        .basketButton {
-            position: relative;
+        .login-block:hover>.login-form {
+          display: block;
+        }
+
+        .basket-block {
+            width: 130px;
+            height: 130px;
 
             .basketImg {
               background: url(../images/basket.png) 0 0 no-repeat;
               width: 30px;
               height: 35px;
               position: absolute;
-              top: 32%;
-              right: 40%;
+              top: 2%;
+              right: 3.5%;
+            }
+
+            //for js for opening basket form
+            .changeBasketSymbol {
+              background: url(../images/basket-onclick.png) 0 0 no-repeat;
+              position: absolute;
+              background-size: 70%;
+              top: 2%;
+              right: 2.2%;
+              height: 54px;
+              width: 47px;
             }
 
             .chosen-product-number {
-              @include circle();
+              @include circle(25px, 25px, 20px);
               background-color: $green;
               position: absolute;
-              top: 49%;
-              right: 25%;
+              top: 3.1%;
+              right: 2.4%;
               color: #fff;
-              line-height: 1.7;
-              font-size: 1.3em;
+              font-size: 1.1em;
               font-family: $font-bold;
+              text-align: center;
+            }
+
+            .chosen-product-number-onclick {
+              background-color: $yellow;
+              color: $black;
             }
         }
+
+        .basket-block:hover .basket-form {
+          display: block;
+        }
     }
+}
 
-  //for js - onclick on Login symbol
-  .changeLoginSymbol {
-    background: url(../images/login-onclick.png) 0 0 no-repeat;
-    position: absolute;
-    width: 42px;
-    height: 38px;
-    top: 35%;
-    right: 30%;
-  }
+.clicked {
 
-  .changeBasketSymbol {
-      background: url(../images/basket-onclick.png) 0 0 no-repeat;
-      position: absolute;
-      background-size: 70%;
-      top: 32%;
-      right: 30%;
-      height: 54px;
-      width: 47px;
-  }
-
-  .greenBckgr {
-    background-color: $green;
-  }
-
-  .chosen-product-number-onclick {
-    background-color: $yellow;
-  }
 }
