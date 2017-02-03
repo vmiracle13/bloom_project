@@ -3,8 +3,9 @@
   window.onload = function() {
 
     var photos = document.querySelector('.photos');
-    var mainPhoto = document.querySelector('img');
+    var mainPhoto = document.querySelector('.main-product-photo');
     var selectedPreview = photos.querySelector('img');
+
     var activeClass = 'onclick';
     selectedPreview.classList.add(activeClass);
 

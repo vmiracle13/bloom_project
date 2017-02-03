@@ -1,4 +1,6 @@
-nav {
+@import 'variables';
+
+.navigation {
     margin-bottom: 2.9%;
     font-size: 1.3em;
 
@@ -12,4 +14,29 @@ nav {
         a:last-child {
           margin-right: 0;
         }
+}
+
+@media (max-device-width: 640px)  {
+
+    .navigation {
+        position: absolute;
+        top: 12%;
+        left: 0;
+        z-index: 10;
+        display: none;
+        width: 980px;
+        background-color: $yellow;
+        font-size: 1.6em;
+        opacity: 0.8;
+
+      a {
+          display: block;
+          padding: 10px 0;
+          margin-right: 0;
+        }
+    }
+
+    .animation {
+      display: block;
+    }
 }

@@ -1,4 +1,4 @@
-@import '_variables';
+@import 'variables';
 
 .list-of-popular {
   margin: 0 10% 12% 10%;
@@ -30,51 +30,130 @@
     margin-left: 1%;
   }
 
-  li {
-    display: inline-block;
-    background-color: #8b8b8b;
-    float: left;
-    width: 33%;
-    height: 313px;
-
-    figure {
-      display: none;
+  @media screen and (max-width: 1024px)  {
+    h3:before,
+    h3:after {
+      margin-bottom: 0.9%;
     }
   }
 
-  li:nth-child(2n + 1) {
-    background-color: #787878;
+  @media (max-device-width: 640px)  {
+    h3:before {
+      width: 7%;
+      margin-right: 4%;
+    }
+    h3 {
+      margin-bottom: 4%;
+    }
+    h3:after {
+      width: 7%;
+      margin-left: 4%;
+    }
+
   }
 
-  li:hover {
-    background-color: #ecd014;
+  .list-of-popular-products {
+      display: flex;
+      flex-wrap: wrap;
 
-    figure {
-      padding-top: 12%;
-      display: block;
-    }
+      li {
+        width: 33%;
+        height: 313px;
 
-    img {
-      background-size: 100% 100%;
-      width: 100px;
-      height: 100px;
-      margin-bottom: 10%;
-    }
+        figure {
+          display: none;
+        }
+      }
 
-    figcaption {
-      display: block;
-      font-size: 140%;
-      margin-bottom: 3%;
-    }
+      .first {
+        background: url(../images/photos/main/list-of-popular/dreamstime_xxl_82997861.jpg) 0 0 no-repeat;
+        background-size: cover;
+      }
+      .second {
+        background: url(../images/photos/main/list-of-popular/dreamstime_xxl_83009128.jpg) 0 0 no-repeat;
+        background-size: cover;
+      }
+      .third {
+        background: url(../images/photos/main/list-of-popular/dreamstime_xxl_83009929.jpg) 0 0 no-repeat;
+        background-size: cover;
+      }
+      .fourth {
+        background: url(../images/photos/main/list-of-popular/dreamstime_xxl_82997470.jpg) 0 0 no-repeat;
+        background-size: cover;
+      }
+      .fifth {
+        background: url(../images/photos/main/list-of-popular/dreamstime_xxl_83009045.jpg) 0 0 no-repeat;
+        background-size: cover;
+      }
+      .sixth {
+        background: url(../images/photos/main/list-of-popular/dreamstime_xxl_83010443.jpg) 0 0 no-repeat;
+        background-size: cover;
+      }
 
-    figcaption:last-child {
-      text-transform: lowercase;
-      font-weight: normal;
-    }
+      @media screen and (max-width: 1024px) {
+        li {
+          height: 200px;
+        }
+      }
 
-    a {
-      font-weight: bold;
-      color: black;
-    }
+      li:hover {
+          overflow: hidden;
+
+          figure {
+              padding: 13% 0;
+              display: block;
+              background-color: #ecd014;
+              opacity: 0.9;
+              height: 100%;
+
+              img {
+                background-size: 100% 100%;
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10%;
+              }
+
+              figcaption {
+                  font-size: 1.6em;
+                  margin-bottom: 2.5%;
+
+                  span {
+                    font-weight: bold;
+                    font-size: 1em;
+                    text-transform: uppercase;
+                  }
+              }
+
+              figcaption:last-child {
+                text-transform: lowercase;
+                font-weight: normal;
+              }
+
+              a {
+                font-weight: bold;
+                color: black;
+              }
+          }
+      }
+
+      @media screen and (max-width: 1024px)  {
+        li:hover {
+          figure {
+              padding: 5% 0;
+
+              img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 6%;
+              }
+
+              figcaption {
+                font-size: 1.2em;
+              }
+          }
+
+        }
+      }
   }
+
 }

@@ -7,7 +7,7 @@
     document.addEventListener("DOMContentLoaded", function() {
 
       var loginBlock = document.querySelector('.login-block');
-      var loginForm = loginBlock.querySelector('.login-form');
+      var loginForm = loginBlock.querySelector('.form-login');
       var loginImg = loginBlock.querySelector('.loginImg');
 
       loginBlock.addEventListener("click", openLoginForm);
@@ -16,8 +16,9 @@
 
         var target = event.target;
 
-        if (target.tagName == "DIV" || (target.tagName == 'SPAN' && target.classList.contains('loginImg')) ) {
-            loginBlock.classList.toggle('greenBckgr');
+        if ((target.tagName == "DIV" && (target.classList.contains('login-block') || target.classList.contains('loginImg')))
+            || (target.tagName == 'SPAN' && target.classList.contains('loginImg')) ) {
+            loginBlock.classList.toggle('selected');
             loginImg.classList.toggle('changeLoginSymbol');
 
             loginBlock.classList.add('clicked');

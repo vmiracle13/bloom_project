@@ -6,7 +6,7 @@
   document.addEventListener("DOMContentLoaded", function() {
 
       var basketBlock = document.querySelector('.basket-block');
-      var basketForm = basketBlock.querySelector('.basket-form');
+      var basketForm = basketBlock.querySelector('.form-basket');
       var basketImg = basketBlock.querySelector('.basketImg');
       var productNumber = basketBlock.querySelector('.chosen-product-number');
 
@@ -18,7 +18,7 @@
 
           if (target.tagName == "DIV" && target.classList.contains('basket-block') || (target.tagName == 'SPAN') && target.classList.contains('basketImg')) {
 
-              basketBlock.classList.toggle('greenBckgr');
+              basketBlock.classList.toggle('selected');
               basketImg.classList.toggle('changeBasketSymbol');
               productNumber.classList.toggle('chosen-product-number-onclick');
 

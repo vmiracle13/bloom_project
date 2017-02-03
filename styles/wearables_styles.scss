@@ -1,22 +1,140 @@
+@import 'reset';
 @import 'variables';
 @import 'fonts';
+@import 'header';
 
 body {
   background-color: $backgrcolor;
   font: 100% $font-regular;
 
-  .wrapper {
-
       .main {
           border: 10px solid #faf6d6;
           margin: 2%;
-          padding: 3% 5%;
           background-color: #fff;
 
-          nav {
+          .header {
+              background-color: $yellow;
+              margin-bottom: 4%;
+
+              .form-search {
+
+              }
+
+              @media (max-device-width: 640px)  {
+
+              }
+
+              .login-and-basket {
+                  .login-block {
+                    margin-right: 0.5%;
+
+                    .loginImg {
+                      top: 11.5%;
+                      right: 13.4%;
+                    }
+
+                    @media screen and (max-width: 1024px)  {
+                      .loginImg {
+                        top: 10%;
+                        right: 20%;
+                      }
+                    }
+
+                    //for js during opening login form
+                    .changeLoginSymbol {
+                      top: 11%;
+                      right: 13.4%;
+                    }
+
+                    @media screen and (max-width: 1024px)  {
+                      .changeLoginSymbol {
+                        top: 10%;
+                        right: 20.3%;
+                      }
+                    }
+
+                    .form-login {
+                      top: 21.7%;
+                      right: 2.6%;
+                    }
+
+                    @media screen and (max-width: 1024px)  {
+                      .form-login {
+                        top: 20.7%;
+                        right: 3.7%;
+                      }
+                    }
+                  }
+
+                  .basket-block {
+                      .basketImg {
+                        top: 11%;
+                        right: 6%;
+                      }
+
+                      @media screen and (max-width: 1024px)  {
+                        .basketImg {
+                          top: 9.8%;
+                          right: 8.5%;
+                        }
+                      }
+
+                      //for js for opening basket form
+                      .changeBasketSymbol {
+                        top: 11%;
+                        right: 5%;
+                      }
+
+                      @media screen and (max-width: 1024px)  {
+                        .changeBasketSymbol {
+                          top: 10%;
+                          right: 7%;
+                        }
+                      }
+
+                      .chosen-product-number {
+                        top: 14%;
+                        right: 5%;
+                      }
+
+                      @media screen and (max-width: 1024px)  {
+                        .chosen-product-number {
+                          top: 11%;
+                          right: 7.1%;
+                        }
+                      }
+
+                      .chosen-product-number-onclick {
+                        background-color: $yellow;
+                        color: $black;
+                      }
+
+                      @media screen and (max-width: 1024px)  {
+                        .chosen-product-number {
+                          top: 13.2%;
+                          right: 7.1%;
+                        }
+                      }
+
+                      .form-basket {
+                        top: 21.5%;
+                        right: 2.6%;
+                      }
+
+                      @media screen and (max-width: 1024px)  {
+                        .form-basket {
+                          top: 20.7%;
+                          right: 3.5%;
+                        }
+                      }
+                  }
+              }
+          }
+
+          .navigation {
             margin: 2% 2% 4% 2%;
             text-align: center;
-            font-weight: bold;
+            font-size: 1.3em;
 
             a {
               color: #0b0b0b;
@@ -30,7 +148,9 @@ body {
             }
           }
 
-          ul {
+          .list {
+              padding: 0 7%;
+
               li {
                   @include border();
                   display: inline-block;
@@ -53,9 +173,23 @@ body {
                     height: 250px;
                   }
 
+                  @media screen and (max-width: 1024px)  {
+                    .small {
+                      width: 250px;
+                      height: 180px;
+                    }
+                  }
+
                   .big {
                     width: 520px;
                     height: 280px;
+                  }
+
+                  @media screen and (max-width: 1024px)  {
+                    .big {
+                      width: 350px;
+                      height: 208px;
+                    }
                   }
 
                   .currency {
@@ -88,12 +222,19 @@ body {
                     cursor: pointer;
                   }
 
+                  @media screen and (max-width: 1024px)  {
+                    button {
+                      bottom: 4%;
+                      left: 22%;
+                    }
+                  }
+
                   .color-circles {
                     margin-bottom: 3%;
 
                     .circle {
                       @include circle();
-                      margin-left: -3%;
+                      margin-left: -4%;
                     }
 
                     .yellow {
@@ -119,6 +260,12 @@ body {
                     }
                   }
 
+              }
+
+              @media screen and (max-width: 1024px)  {
+                li {
+                  margin: 0 1% 1% 1%;
+                }
               }
 
               li:hover button {
@@ -171,9 +318,74 @@ body {
                     font-size: 1em;
                     display: none;
                   }
-          }
 
+                  @media screen and (max-width: 1024px)  {
+                    button {
+                      bottom: 23%;
+                      padding: 3% 5%;
+                    }
+                  }
+          }
       }
+
+          @media screen and (max-width: 1024px)  {
+            .list {
+              padding: 0 1.5%;
+            }
+          }
       }
+
+  @media (max-device-width: 640px)  {
+    .main {
+      margin: 0;
+      border: 0;
+
+      header {
+          .form-search {
+            position: absolute;
+            top: 7.4%;
+            right: 2.8%;
+          }
+      }
+
+      .menu-picture {
+        display: block;
+        position: absolute;
+        top: 12%;
+        left: 4%;
+        width: 5%;
+        height: 10px;
+        padding: 15px;
+        background-image: linear-gradient(#000 50%, transparent 50%);
+        background-size: 100% 15px;
+      }
+
+      .navigation {
+          position: absolute;
+          top: 16.5%;
+          left: 0;
+          z-index: 10;
+          display: none;
+          width: 100%;
+          margin: 0;
+          background-color: $yellow;
+          font-size: 1.6em;
+          opacity: 0.8;
+          text-align: center;
+
+          a {
+            display: block;
+            padding: 10px 0;
+            margin-right: 0;
+          }
+      }
+
+      .animation {
+          display: block;
+      }
+    }
   }
 }
+
+
+

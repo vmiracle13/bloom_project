@@ -23,9 +23,7 @@
        }
 
       button.classList.toggle('onclickButtonBefore');
-      button.classList.toggle('onclickButtonBackground');
       textOnImg.classList.toggle('hide');
-      img.classList.toggle('onclickButtonBackground');
     }
 
   };

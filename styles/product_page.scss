@@ -1,0 +1,404 @@
+@import 'reset';
+@import 'variables';
+@import 'header';
+
+body {
+  background-color: $backgrcolor;
+  font: 100% $font-regular;
+
+  .background {
+    position: absolute;
+    top: 54.5%;
+    height: 500px;
+    width: 100%;
+    background-color: $green;
+    z-index: -10;
+  }
+
+  @media screen and (max-width: 1024px)  {
+    .background {
+      top: 32.7%;
+      height: 400px;
+    }
+  }
+
+  .main {
+    margin: 2%;
+    @include border(10px, $cream_border);
+    background-color: #fff;
+
+    .header {
+      margin-bottom: 3%;
+
+      .login-and-basket {
+        .login-block {
+          .loginImg {
+            top: 11.6%;
+            right: 13.4%;
+          }
+
+          .form-login {
+            top: 21.7%;
+            right: 2.6%;
+          }
+
+          //for js during opening login form
+          .changeLoginSymbol {
+            top: 11%;
+            right: 13.4%;
+          }
+
+          @media screen and (max-width: 1024px)  {
+            .changeLoginSymbol {
+              top: 13.7%;
+              right: 20.8%;
+            }
+            .loginImg {
+              top: 14%;
+              right: 20.6%;
+            }
+            .form-login {
+              top: 24.8%;
+              right: 4%;
+            }
+          }
+        }
+
+        .basket-block {
+          .basketImg {
+            top: 11.1%;
+            right: 6%;
+          }
+
+          //for js for opening basket form
+          .changeBasketSymbol {
+            top: 11.1%;
+            right: 5%;
+          }
+
+          .chosen-product-number {
+            top: 14.2%;
+            right: 5%;
+          }
+
+          .chosen-product-number-onclick {
+            top: 14.1%;
+            right: 5%;
+          }
+
+          .form-basket {
+            top: 21.7%;
+            right: 2.6%;
+          }
+
+          @media screen and (max-width: 1024px)  {
+            .basketImg {
+              top: 13.8%;
+              right: 9%;
+            }
+            .changeBasketSymbol {
+              top: 13.7%;
+              right: 7.5%;
+            }
+            .chosen-product-number {
+              top: 16.8%;
+              right: 7.5%;
+            }
+            .chosen-product-number-onclick {
+              top: 17%;
+              right: 7.5%;
+            }
+            .form-basket {
+              top: 24.8%;
+              right: 4%;
+            }
+          }
+        }
+      }
+    }
+
+    .navigation {
+      margin-bottom: 4%;
+      font-size: 1.3em;
+      text-align: center;
+
+      a {
+        color: #0b0b0b;
+        margin-right: 5%;
+        display: inline-block;
+        text-decoration: none;
+      }
+
+      a:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .clicked {
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 0 6% 6% 6%;
+
+      a {
+        text-decoration: none;
+      }
+
+      .main-product-photo {
+        width: 53.5%;//650px;
+        height: 500px;
+        background-color: $dark_grey;
+        float: left;
+        margin-right: 5%;
+        margin-top: 10%;
+      }
+
+      @media screen and (max-width: 1024px)  {
+        .main-product-photo {
+          height: 400px;
+          margin-top: 13%;
+        }
+      }
+
+      .form-add-to-basket {
+        overflow: hidden;
+
+        .back-to-shop {
+          margin-bottom: 15%;
+
+          a:before {
+            content: '';
+            background: url(../images/back-to-shop.png) 0 0 no-repeat;
+            display: inline-block;
+            width: 71px;
+            height: 71px;
+            margin-right: 10px;
+            margin-bottom: -32px;
+          }
+
+          a {
+            font-size: 0.7em;
+            font-weight: bold;
+            color: #000;
+            text-transform: uppercase;
+          }
+        }
+
+        @media screen and (max-width: 1024px)  {
+          .back-to-shop {
+            margin-bottom: 18%;
+          }
+        }
+
+        span {
+          font-size: 2em;
+          display: block;
+        }
+
+        .designed {
+          font-size: 0.9em;
+          font-weight: bold;
+          margin-bottom: 3%;
+        }
+
+        .underlined {
+          border-bottom: 1px solid $grey;
+          margin-bottom: 5%;
+          display: flex;
+
+          .price {
+            margin-right: 23%;
+
+            .currency {
+              font-size: 1.8em;
+              display: inline;
+              font-family: $font-bold;
+            }
+
+            @media screen and (max-width: 1024px)  {
+              .currency {
+                font-size: 1.5em;
+              }
+            }
+
+            .product-price {
+              font-size: 2.8em;
+              display: inline;
+              font-family: $font-bold;
+            }
+
+            @media screen and (max-width: 1024px)  {
+              .product-price {
+                font-size: 2em;
+              }
+            }
+          }
+
+          .colour-circles {
+            margin-right: 20%;
+            padding-top: 2%;
+
+            .circle {
+              @include circle();
+              margin-right: -10%;
+            }
+
+            @media screen and (max-width: 1024px)  {
+              .circle {
+                @include circle(20px, 20px, 15px);
+              }
+            }
+            .yellow {
+              background-color: $light_yellow;
+            }
+            .orange {
+              background-color: $orange;
+            }
+            .blue {
+              background-color: $blue;
+            }
+          }
+
+          @media screen and (max-width: 1024px)  {
+            .colour-circles {
+              margin-right: 10%;
+            }
+          }
+
+          .units-number {
+            background-color: $backgrcolor;
+            @include border(1px, $cream_border);
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: $dark_grey;
+            padding: 14%;
+            outline: none;
+          }
+
+          @media screen and (max-width: 1024px)  {
+            .units-number {
+              padding: 8%;
+            }
+          }
+        }
+
+        .product-description {
+          color: $dark_grey;
+          font-size: 0.9em;
+          margin-bottom: 5%;
+        }
+
+        .photos {
+          margin-bottom: 15.5%;
+          padding: 0;
+
+          li {
+            display: inline-block;
+            margin-right: 3%;
+
+            img {
+              width: 9em;
+              height: 9em;
+              background-color: $dark_grey;
+              vertical-align: middle;
+            }
+
+            @media screen and (max-width: 1024px)  {
+              img {
+                width: 6.3em;
+                height: 6.3em;
+              }
+            }
+          }
+
+          li:last-child {
+            margin-right: 0;
+          }
+
+          //for js
+          .onclick {
+            width: 7.9em;
+            height: 7.9em;
+            @include border(10px, #f8f3cf);
+          }
+
+          @media screen and (max-width: 1024px)  {
+            .onclick {
+              width: 5.3em;
+              height: 5.3em;
+            }
+          }
+        }
+
+        @media screen and (max-width: 1024px)  {
+          .photos {
+            margin-bottom: 17%;
+          }
+        }
+
+        button {
+          background-color: $green;
+          border-radius: 5px;
+          color: #fff;
+          padding: 3% 8%;
+          border: none;
+          font-family: $font-regular;
+          font-size: 1.1em;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media (max-device-width: 640px)  {
+    .main {
+      border: 0;
+      margin: 0;
+
+      header {
+        .form-search {
+          position: absolute;
+          top: 7.4%;
+          right: 2.8%;
+        }
+      }
+
+      .menu-picture {
+        display: block;
+        position: absolute;
+        top: 12%;
+        left: 4%;
+        width: 5%;
+        height: 10px;
+        padding: 15px;
+        background-image: linear-gradient(#000 50%, transparent 50%);
+        background-size: 100% 15px;
+      }
+
+      .navigation {
+        position: absolute;
+        top: 16.5%;
+        left: 0;
+        z-index: 10;
+        display: none;
+        width: 100%;
+        margin: 0;
+        background-color: $yellow;
+        font-size: 1.6em;
+        opacity: 0.8;
+        text-align: center;
+
+        a {
+          display: block;
+          padding: 10px 0;
+          margin-right: 0;
+        }
+      }
+
+      .animation {
+        display: block;
+      }
+    }
+  }
+}

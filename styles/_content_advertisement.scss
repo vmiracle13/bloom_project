@@ -1,48 +1,193 @@
-@import '_variables';
+@import 'variables';
+@import 'variables';
 
 .advertisement {
-  border: 3px solid $grey;
-  position: relative;
-  float: left;
-  width: 65%;
-  padding-bottom: 4%;
-  margin-right: 1.3%;
-
-  figure {
-    padding: 2% 0 0 2%;
-  }
-
-  img {
-    max-width: 100%;
-    width: 875px;
-    height: 459px;
-    background-color: #8b8b8b;
+    width: 830px;
     border: 3px solid $grey;
-    margin-bottom: 0.5%;
+    position: relative;
+    margin-right: 1.3%;
+
+    .carousel {
+        overflow:hidden;
+        width: 830px;
+        margin-bottom: 5%;
+        box-sizing: border-box;
+
+        .tape {
+          padding: 0;
+          margin: 0;
+          width: 9999px;
+          height: 500px;
+          list-style: none;
+          transition: margin-left 250ms;
+          overflow: hidden;
+
+          li {
+            float: left;
+
+            img {
+              display: block;
+              width: 830px;
+              height: 460px;
+              border-bottom: 3px solid $grey;
+              margin-bottom: 1%;
+              box-sizing: border-box;
+            }
+
+            @media screen and (max-width: 1024px)  {
+              img {
+                max-width: 500px;
+              }
+            }
+
+            span {
+              display: block;
+              text-transform: uppercase;
+              font-size: 2em;
+              cursor: pointer;
+            }
+
+            .picture-title {
+              position: absolute;
+              bottom: 30%;
+              left: 18%;
+              padding: 2% 4%;
+              border: 2px solid #000;
+              font-family: $font-bold;
+            }
+
+            .author {
+              display: none;
+              color: #fff;
+              text-transform: none;
+            }
+
+            .picture-description {
+              font-size: 1.4em;
+              margin-bottom: 2%;
+            }
+
+            @media screen and (max-width: 1024px) {
+              span {
+                padding: 3%;
+                font-size: 1.6em;
+                left: 11%;
+                bottom: 23%;
+              }
+            }
+          }
+        }
+    }
+
+    .radio-buttons {
+        display: none;
+        padding: 0;
+        margin: 2% 0 6% 0;
+
+        li {
+            display: inline-block;
+            position: relative;
+            margin-right: 5%;
+
+            input {
+              opacity: 0;
+            }
+
+            span {
+              position: absolute;
+              cursor: pointer;
+              display: block;
+              width: 40px;
+              height: 40px;
+            }
+
+            .checked {
+              top: 0;
+              left: 0;
+              background: url(../images/radiobox-checked.jpg) 0 0 no-repeat;
+              background-size: 80% 80%;
+            }
+
+            .first-after-checked {
+              top: 31%;
+              left: 35%;
+              background: url(../images/radiobox-not-checked-dark.png) 0 0 no-repeat;
+              background-size: 38% 38%;
+            }
+
+            .farthest-checked {
+              top: 31%;
+              left: 34%;
+              background: url(../images/radiobox-not-checked-light.png) 0 0 no-repeat;
+              background-size: 38% 38%;
+            }
+    }
+
+        li:last-child {
+          margin-right: 0;
+        }
   }
 
-  span {
-    position: absolute;
-    bottom: 27%;
-    left: 21%;
-    border: 2px solid #000000;
-    padding: 1% 3%;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-family: $font-bold;
-    cursor: pointer;
-  }
+    a {
+      font-family: $font-bold;
+      text-decoration: none;
+      color: $black
+    }
+}
 
-  figcaption {
-    text-transform: uppercase;
-    margin-bottom: 7%;
-    font-size: 1.3em;
-  }
+@media (max-device-width: 640px)  {
+    .advertisement {
+      padding: 0;
+      margin: 0;
+      border: none;
+      width: 980px;
 
-  a {
-    font-family: $font-bold;
-    text-decoration: none;
-    color: $black
-  }
+      .carousel {
+        margin-bottom: 0;
+        width: 980px;
 
+        .tape {
+          li {
+            min-width: 980px;
+
+            img {
+              border: none;
+              margin-bottom: 0;
+              min-width: 980px;
+              height: 580px;
+            }
+
+            .picture-title {
+              color: $yellow;
+              border: 1px solid $yellow;
+              font-family: $font-regular;
+              position: absolute;
+              bottom: 48%;
+              left: 15%;
+              padding: 3% 6%;
+              font-size: 2.5em;
+            }
+
+            .author {
+              display: block;
+              position: absolute;
+              top: 53%;
+              right: -43%;
+              padding: 0;
+            }
+
+            .picture-description {
+              display: none;
+            }
+          }
+        }
+      }
+      .radio-buttons {
+          display: block;
+      }
+
+      a {
+        display: none;
+      }
+    }
 }

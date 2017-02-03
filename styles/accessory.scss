@@ -1,26 +1,155 @@
+@import 'reset';
 @import 'variables';
-
+@import 'header';
 
 body {
   background-color: $backgrcolor;
   font: 100% $font-regular;
 
-  .wrapper {
-      padding: 2%;
-
       .main {
+          margin: 2%;
+          padding-bottom: 5%;
           @include border(10px, $cream_border);
-          padding: 3% 5%;
+          text-align: center;
+          background-color: #fff;
+
+          .header {
+              background-color: $yellow;
+              margin-bottom: 4%;
+
+            .login-and-basket {
+              .login-block {
+                margin-right: 0.5%;
+
+                .loginImg {
+                  top: 11.6%;
+                  right: 13.3%;
+                }
+
+                @media screen and (max-width: 1024px)  {
+                  .loginImg {
+                    top: 10.8%;
+                    right: 20%;
+                  }
+                }
+
+                //for js during opening login form
+                .changeLoginSymbol {
+                  top: 11%;
+                  right: 13.4%;
+                }
+
+                @media screen and (max-width: 1024px)  {
+                  .changeLoginSymbol {
+                    top: 10%;
+                    right: 20.5%;
+                  }
+                }
+
+                .form-login {
+                  top: 21.7%;
+                  right: 2.6%;
+                }
+
+                @media screen and (max-width: 1024px)  {
+                  .form-login {
+                    top: 21.7%;
+                    right: 3.8%;
+                  }
+                }
+              }
+
+              .basket-block {
+                .basketImg {
+                  top: 11.2%;
+                  right: 6%;
+                }
+
+                @media screen and (max-width: 1024px)  {
+                  .basketImg {
+                    top: 10.5%;
+                    right: 8.5%;
+                  }
+                }
+
+                //for js for opening basket form
+                .changeBasketSymbol {
+                  top: 11%;
+                  right: 5%;
+                }
+                @media screen and (max-width: 1024px)  {
+                  .changeBasketSymbol {
+                    top: 10%;
+                    right: 7%;
+                  }
+                }
+
+                .chosen-product-number {
+                  top: 14%;
+                  right: 5%;
+                }
+
+                @media screen and (max-width: 1024px)  {
+                  .chosen-product-number {
+                    top: 13.5%;
+                    right: 7%;
+                  }
+                }
+
+                .chosen-product-number-onclick {
+                  background-color: $yellow;
+                  color: $black;
+                }
+
+                @media screen and (max-width: 1024px)  {
+                  .chosen-product-number-onclick {
+                    top: 13.4%;
+                    right: 7%;
+                  }
+                }
+
+                .form-basket {
+                  top: 21.7%;
+                  right: 2.6%;
+                }
+
+                @media screen and (max-width: 1024px)  {
+                  .form-basket {
+                    top: 21.7%;
+                    right: 3.6%;
+                  }
+                }
+              }
+            }
+          }
+
+
+          .navigation {
+              margin-bottom: 4%;
+              font-size: 1.3em;
+
+              a {
+                color: #0b0b0b;
+                margin-right: 5%;
+                display: inline-block;
+                text-decoration: none;
+              }
+
+              a:last-child {
+                margin-right: 0;
+              }
+          }
 
           .product {
               @include border();
               background-color: #fff;
               overflow: hidden;
-              width: 720px;
+              width: 830px;
               margin: 0 auto;
+              padding-bottom: 1%;
 
               .carousel {
-                  width: 720px;
+                  width: 830px;
 
                   ul {
                     overflow: hidden;
@@ -37,8 +166,8 @@ body {
                         img {
                           background-color: $dark_grey;
                           display: block;
-                          width: 720px;
-                          height: 480px;
+                          width: 830px;
+                          height: 460px;
                         }
                       }
                   }
@@ -47,17 +176,17 @@ body {
 
               .container {
                   padding: 5%;
-                  overflow: hidden;
 
                   .section {
                     text-align: left;
+                    float: left;
 
                     .color-circles {
                       margin: 0 0 4% 2%;
 
                       .circle {
                         @include circle(23px, 23px, 20px);
-                        margin-left: -1.5%;
+                        margin-left: -3%;
                       }
 
                       .yellow {
@@ -89,13 +218,13 @@ body {
                     }
                   }
 
-                  .sidebar {
+                  .controls {
                       float: right;
-                      margin: 0 auto;
 
                       .radio-buttons {
                           padding: 0;
-                          margin: 0 0 12% 30%;
+                          text-align: center;
+                          margin: 0 0 14% 0;
 
                           li {
                               display: inline-block;
@@ -120,7 +249,7 @@ body {
                               }
 
                               .first-after-checked {
-                                  top: 23%;
+                                  top: 24%;
                                   left: 35%;
                                   background: url(../images/radiobox-not-checked-dark.png) 0 0 no-repeat;
                               }
@@ -149,9 +278,55 @@ body {
               }
         }
       }
+
+  @media (max-device-width: 640px)  {
+    .main {
+      margin: 0;
+      border: 0;
+
+      header {
+        .form-search {
+          position: absolute;
+          top: 7.4%;
+          right: 2.8%;
+        }
+      }
+
+      .menu-picture {
+        display: block;
+        position: absolute;
+        top: 12%;
+        left: 4%;
+        width: 5%;
+        height: 10px;
+        padding: 15px;
+        background-image: linear-gradient(#000 50%, transparent 50%);
+        background-size: 100% 15px;
+      }
+
+      .navigation {
+        position: absolute;
+        top: 16.5%;
+        left: 0;
+        z-index: 10;
+        display: none;
+        width: 100%;
+        margin: 0;
+        background-color: $yellow;
+        font-size: 1.6em;
+        opacity: 0.8;
+        text-align: center;
+
+        a {
+          display: block;
+          padding: 10px 0;
+          margin-right: 0;
+        }
+      }
+
+      .animation {
+        display: block;
+      }
+    }
   }
 }
-
-
-
-

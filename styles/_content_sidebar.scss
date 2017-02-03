@@ -1,8 +1,7 @@
-@import '_variables';
+@import 'variables';
 
 .sidebar {
       border: 3px solid $grey;
-      overflow: hidden;
       position: relative;
 
       img {
@@ -12,39 +11,97 @@
           background-color: #8b8b8b;
       }
 
-      section:before{
+      .textOnImg {
+          color: #fff;
+
+          .transparent-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 520px;
+            height: 347px;
+            background-color: $green;
+            opacity: 0.6;
+          }
+
+        @media screen and (max-width: 1024px)  {
+          .transparent-background {
+            width: 352px;
+          }
+        }
+
+          h2 {
+            position: absolute;
+            top: 10%;
+            left: 29%;
+            font-size: 7em;
+            text-shadow: 6px 0 2px #dcdcdc;
+          }
+
+          span {
+            position: absolute;
+            top: 28%;
+            left: 40%;
+            font-size: 3.5em;
+            text-shadow: 2px 2px 2px #dcdcdc;
+            font-family: $font-bold;
+          }
+
+          @media screen and (max-width: 1024px)  {
+            h2 {
+              left: 21%;
+            }
+            span {
+              left: 33%;
+            }
+          }
+      }
+
+      .section:before{
           content: '';
           position: absolute;
           right: 43%;
-          top: 46%;
+          top: 45%;
           border: 30px solid transparent;
           border-bottom: 30px solid #fff;
       }
 
-      section {
-          padding: 0 3% 10% 3%;
-      }
+        @media screen and (max-width: 1024px)  {
+          .section:before {
+            top: 49%;
+          }
+        }
 
-      h3 {
+      .section {
+          padding: 0 5% 10% 5%;
+
+        h3 {
           font-size: 2.8em;
           font-family: $font-bold;
-      }
+        }
 
-      article {
+        .stripe {
           width: 32%;
           border-bottom: 2px solid #000;
-          margin-left: 34%;
+          margin-left: 35%;
           margin-bottom: 5%;
-      }
+        }
 
-      span {
+        @media screen and (max-width: 1024px)  {
+          .stripe {
+            width: 46%;
+            margin-left: 28%;
+          }
+        }
+
+        span {
           font-family: $font-regular;
           font-size: 1.1em;
           display: block;
           margin-bottom: 12%;
-      }
+        }
 
-      button {
+        button {
           margin: 0 auto;
           padding: 3.2%;
           font-family: $font-regular;
@@ -55,48 +112,44 @@
           width: 55%;
           color: $black;
           cursor: pointer;
-      }
+        }
 
-    // for js  - hover actions
-      .textOnImg {
-          position: absolute;
-          top: 10%;
-          right: 31%;
-          color: #fff;
-          line-height: 1;
-
-          h2 {
-              font-size: 7em;
-              text-shadow: 6px 0 2px #dcdcdc;
-          }
-          span {
-              font-size: 3.5em;
-              text-shadow: 2px 2px 2px #dcdcdc;
-          }
-      }
-
-      .onclickButtonBackground {
-          background-color: $green;
-      }
-
-      .onclickButtonBefore {
+        // for js  - clicked actions
+        .onclickButtonBefore {
           content: ' ';
           width: 25px;
           display: inline-block;
           background: url(../images/heart.png) 35px 17px no-repeat;
-      }
+        }
 
-      .onclickButton {
+        .onclickButton {
           padding: 3.2%;
           background-color: $green;
           box-shadow: 0 3px 3px 0 #3db04e;
           color: #fff;
           margin: 0 auto;
-          font-family: $font-regular;
-          font-size: 1.5em;
-          border-radius: 28px;
-          border: none;
           width: 55%;
-          cursor: pointer;
+        }
+
+        @media screen and (max-width: 1024px)  {
+          button {
+            width: 60%;
+          }
+          .onclickButton {
+            width: 60%;
+          }
+          .onclickButtonBefore {
+            background-position-x: 25px;
+            background-position-y: 13px;
+          }
+        }
+
       }
+}
+
+@media (max-device-width: 640px) {
+      .sidebar {
+          display: none;
+      }
+
 }

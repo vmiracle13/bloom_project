@@ -1,0 +1,36 @@
+@import 'variables';
+
+.banner {
+  background-color:$yellow;
+  padding: 16.6% 0.5% 15% 6%;
+  font-family: $font-regular;
+  margin-bottom: 7.5%;
+  line-height: 1;
+
+  .logo {
+    margin-bottom: 12%;
+
+    h2 {
+      font-family: $font-bold;
+      font-size: 8em;
+    }
+
+    .logo-text {
+      font-size: 2.5em;
+    }
+  }
+
+  .banner-text {
+    font-size: 1.595em;
+    width: 66.5%;
+    line-height: 2;
+    font-family: $font-regular;
+    color: #76681a;
+  }
+}
+
+@media screen and (max-width: 1024px)  {
+  .banner {
+    display: none;
+  }
+}

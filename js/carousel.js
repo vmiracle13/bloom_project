@@ -10,8 +10,8 @@
         var spanCheckedRadioBox = checkboxBlock.querySelector('span');
         var checkedRadioBox = checkboxBlock.querySelector('input');
         var tape = document.querySelector('.tape');
-        var imgLength = 720;
-
+        var spanAuthor = document.querySelector('.author');
+        var imgLength = 830;
         var activeClass='checked';
 
         checkboxBlock.addEventListener("click", checkRadioBox);
@@ -22,6 +22,10 @@
 
             if (target.tagName != 'SPAN') {
               return;
+            }
+
+            if (spanAuthor!= null && spanAuthor.style.display == '') {
+              imgLength = 980;
             }
 
             spanCheckedRadioBox.classList.remove(activeClass);

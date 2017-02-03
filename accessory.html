@@ -9,20 +9,112 @@
     <div class="wrapper">
         <div class="main">
 
-            <div class="product">
+
+          <header class="header">
+
+            <form class="form-search">
+              <input class="search" name="search" type="search" placeholder="SEARCH">
+              <span class="search-symbol"></span>
+            </form>
+
+            <div class="login-and-basket">
+
+              <div class="login-block blackBlock">
+
+                <span class="loginImg"></span>
+
+                <form class="form-login">
+                  <div class="wrap">
+                    <span class="login-title">Login Panel</span>
+                    <input name="loginField" type="text">
+                    <input name="passwordField" type="password" class="input-password">
+                    <button class="signIn">Sign in</button>
+                    <div class="line"></div>
+                    <span class="text-before-socials">or sign in with</span>
+                  </div>
+                  <a href="#" class="left"></a>
+                  <a href="#" class="right"></a>
+                </form>
+              </div>
+
+              <div class="basket-block blackBlock">
+                <span class="basketImg"></span>
+                <span class="chosen-product-number">3</span>
+
+                <form class="form-basket">
+                  <ul class="list-of-chosen-products">
+                    <li>
+                      <img class="basket-product-photo" src="images/photos/basket/dreamstime_xxl_82984058.jpg" alt="">
+                      <div class="block">
+                        <span class="basket-product-name">Tank Bath</span>
+                        <span class="basket-product-number">1 pcs</span>
+                        <span class="basket-product-price">$140</span>
+                        <button class="basket-pict"></button>
+                      </div>
+                    </li>
+                    <li>
+                      <img class="basket-product-photo" src="images/photos/basket/dreamstime_xxl_82984873.jpg" alt="">
+                      <div class="block">
+                        <span class="basket-product-name">Shop Shark</span>
+                        <span class="basket-product-number">4 pcs</span>
+                        <span class="basket-product-price">$9</span>
+                        <button class="basket-pict"></button>
+                      </div>
+                    </li>
+                    <li>
+                      <img class="basket-product-photo" src="images/photos/basket/dreamstime_xxl_82992364.jpg" alt="">
+                      <div class="block">
+                        <span class="basket-product-name">Funky and Retro</span>
+                        <span class="basket-product-number">2 pcs</span>
+                        <span class="basket-product-price">$10</span>
+                        <button class="basket-pict"></button>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class="basket-total-info">
+                    <img src="images/basket-arrow-to-right.png" alt="">
+                    <span class="basket-total-number">7</span>
+                    <span class="basket-total-units">pcs</span>
+                    <span class="basket-total-word">total:</span>
+                    <span class="basket-total-price">$216</span>
+                    <button>Add To Card</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <h1 class="logotype">
+                <a href="index.html">
+                  <span>bloom</span>
+                  <span>CO.NCEPT</span>
+                </a>
+            </h1>
+          </header>
+
+          <div class="menu-picture"></div>
+          <nav class="navigation">
+            <a href="#">Furniture</a>
+            <a href="wearables.html">Wearables</a>
+            <a href="#">Bicycle</a>
+            <a href="accessory.html">Accessory</a>
+            <a href="#">Lighting</a>
+          </nav>
+
+          <div class="product">
 
                 <div class="carousel">
                     <ul class="tape">
-                        <li><img src="" alt="photo1"></li>
-                        <li><img src="" alt="photo2"></li>
-                        <li><img src="" alt="photo3"></li>
+                        <li><img src="images/photos/accessory_page/dreamstime_xxl_82962914.jpg" alt="photo1"></li>
+                        <li><img src="images/photos/accessory_page/dreamstime_xxl_82961912.jpg" alt="photo2"></li>
+                        <li><img src="images/photos/accessory_page/dreamstime_xxl_82963377.jpg" alt="photo3"></li>
                     </ul>
                 </div>
 
                 <div class="container">
-                    <div class="sidebar">
-                        <ul class="radio-buttons">
+                    <div class="controls">
 
+                        <ul class="radio-buttons">
                             <li>
                               <input type="radio" name="product" value="1" checked>
                               <span class="checked"></span>
@@ -37,7 +129,6 @@
                               <input type="radio" name="product" value="3">
                               <span class="farthest-checked"></span>
                             </li>
-
                         </ul>
                         <button>Buy now</button>
                     </div>
@@ -58,6 +149,9 @@
         </div>
     </div>
 
-<script src="./js/carousel.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/basket.js"></script>
+    <script src="./js/drop-down-menu.js"></script>
 </body>
 </html>

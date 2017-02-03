@@ -1,0 +1,159 @@
+@import 'variables';
+
+.form-basket {
+  position: absolute;
+  top: 5.5%;
+  right: 0;
+  z-index: 10;
+  min-width: 690px;
+  display: none;
+
+  .list-of-chosen-products {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      font-family: $light;
+      font-size: 1.5em;
+      background-color: #fbfaf1;
+
+      .basket-product-photo {
+        max-width: 145px;
+        width: 145px;
+        height: 90px;
+        background-color: $dark_grey;
+      }
+
+      .block {
+        display: inline-flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        padding: 0 3%;
+
+        .basket-product-name {
+          margin-right: 20%;
+        }
+
+        .basket-product-number {
+          font-size: 0.8em;
+          padding-right: 3%;
+          border-right: 1px solid #000;
+          margin-right: 3%;
+        }
+
+        .basket-product-price {
+          font-family: $font-bold;
+          font-size: 1.2em;
+        }
+
+        .basket-pict {
+          background: url(../images/basket-pict-crest-green.png) 0 0 no-repeat;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+          border: none;
+        }
+
+        button {
+          margin-left: auto;
+
+        }
+      }
+    }
+    /*
+
+    // если нужно выделение разным цветом через один li, а не при hover
+
+        li:nth-child(2n) {
+          background-color: $green;
+          color: #fff;
+        }
+
+        li:nth-child(2n) .basket-product-photo {
+          background-color: #8b8b8b;
+        }
+
+        li:nth-child(2n) .basket-product-number {
+          border-right: 1px solid #fff;
+        }
+    */
+
+    li:hover {
+      background-color: $green;
+      color: #fff;
+    }
+
+    li:hover .basket-product-photo {
+      background-color: #8b8b8b;
+    }
+
+    li:hover .basket-product-number {
+      border-right: 1px solid #fff;
+    }
+
+    li:hover .basket-pict {
+      background: url(../images/basket-pict-crest-white.png) 0 0 no-repeat;
+    }
+  }
+
+  .basket-total-info {
+    background-color: #fff;
+    padding: 3%;
+    font-weight: bold;
+    text-align: right;
+
+    span {
+      margin-right: 3%;
+    }
+
+    span:nth-child(2) {
+      padding-right: 2%;
+    }
+
+    .basket-total-number {
+      margin-right: -15px;
+    }
+
+    .basket-total-units {
+      border-right: 1px solid #000;
+      padding-right: 3%;
+    }
+
+    .basket-total-word {
+      font-weight: normal;
+      margin-right: 0;
+    }
+
+    .basket-total-price {
+      font-weight: bold;
+    }
+
+    button {
+      border: none;
+      background-color: $green;
+      border-radius: 5px;
+      color: #fff;
+      padding: 2% 4%;
+      font-family: $font-regular;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    img {
+      margin-right: 4%;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px)  {
+  .form-basket {
+    top: 7.2%;
+  }
+}
+
+.visible {
+  display: block;
+}

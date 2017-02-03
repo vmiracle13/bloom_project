@@ -5,33 +5,32 @@
     <meta name="js test" content="Сайт об js">
 
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <title>mega super js test</title>
+    <title>Bloom e-commerce concept</title>
 </head>
 
 <body>
 
-    <header>
+    <div class="banner">
         <div class="logo">
             <h2>bloom</h2>
             <section class="logo-text">e-commerce concept</section>
         </div>
 
-        <section class="header-text">
+        <section class="banner-text">
             Firstly, I thought how I can create a colorful and ease design for an e-commerce site. So, I tried to reveal a plain layout which has a prominent role for products and highlight them. Also, I want to grab users' attention by using warm colors like yellow and green. I'm glad to share the psd files of this work and please feel free to use it wherever you want. I hope you like it. Thank you!
         </section>
-    </header>
+    </div>
 
     <div class="wrapper">
 
             <div class="main">
 
-                <div class="panel">
+                <header class="header">
 
-                    <form class="search-field">
+                    <form class="form-search">
                         <input class="search" name="search" type="search" placeholder="SEARCH">
                         <span class="search-symbol"></span>
                     </form>
-
 
                     <div class="login-and-basket">
 
@@ -39,13 +38,13 @@
 
                             <span class="loginImg"></span>
 
-                            <form class="login-form">
+                            <form class="form-login">
                                 <div class="wrap">
                                     <span class="login-title">Login Panel</span>
                                     <input name="loginField" type="text">
                                     <input name="passwordField" type="password" class="input-password">
                                     <button class="signIn">Sign in</button>
-                                    <span class="line"></span>
+                                    <div class="line"></div>
                                     <span class="text-before-socials">or sign in with</span>
                                 </div>
                               <a href="#" class="left"></a>
@@ -57,10 +56,10 @@
                             <span class="basketImg"></span>
                             <span class="chosen-product-number">3</span>
 
-                            <form class="basket-form">
-                              <ul>
+                            <form class="form-basket">
+                              <ul class="list-of-chosen-products">
                                 <li>
-                                    <img class="basket-product-photo" src="" alt="">
+                                    <img class="basket-product-photo" src="images/photos/basket/dreamstime_xxl_82984058.jpg" alt="">
                                     <div class="block">
                                       <span class="basket-product-name">Tank Bath</span>
                                       <span class="basket-product-number">1 pcs</span>
@@ -69,7 +68,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <img class="basket-product-photo" src="" alt="">
+                                    <img class="basket-product-photo" src="images/photos/basket/dreamstime_xxl_82984873.jpg" alt="">
                                     <div class="block">
                                       <span class="basket-product-name">Shop Shark</span>
                                       <span class="basket-product-number">4 pcs</span>
@@ -78,7 +77,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <img class="basket-product-photo" src="" alt="">
+                                    <img class="basket-product-photo" src="images/photos/basket/dreamstime_xxl_82992364.jpg" alt="">
                                     <div class="block">
                                       <span class="basket-product-name">Funky and Retro</span>
                                       <span class="basket-product-number">2 pcs</span>
@@ -100,13 +99,17 @@
                         </div>
                     </div>
 
-                  <h1 class="logotype">
-                    <a href="#">bloom CO.NCEPT</a>
-                  </h1>
-                </div>
+                    <h1 class="logotype">
+                        <a href="#">
+                          <span>bloom</span>
+                          <span>CO.NCEPT</span>
+                        </a>
+                    </h1>
+                </header>
 
-              <div class="content">
-                <nav>
+              <div class="topiclist">
+                <div class="menu-picture"></div>
+                <nav class="navigation">
                   <a href="#">Furniture</a>
                   <a href="wearables.html">Wearables</a>
                   <a href="#">Bicycle</a>
@@ -114,74 +117,111 @@
                   <a href="#">Lighting</a>
                 </nav>
 
-                <div class="container">
+                <div class="content">
+
                   <div class="advertisement">
-                    <figure>
-                      <img src="#" alt="advertisement">
-                      <span>A New Generation of Saddles</span>
-                      <figcaption>Cambium is crafted from high-quality materials</figcaption>
-                    </figure>
-                    <a href="#">Go to Sale it&nbsp;&nbsp;&nbsp;></a>
+
+                      <div class="carousel">
+
+                          <ul class="tape">
+                              <li>
+                                <img src="images/photos/main/dreamstime_xxl_83011704.jpg" alt="advertisement1">
+                                <span class="picture-title">A New Generation of Saddles</span>
+                                <span class="author">by Artic Design</span>
+                                <span class="picture-description">Cambium is crafted from high-quality materials</span>
+                              </li>
+                              <li>
+                                <img src="images/photos/accessory_page/dreamstime_xxl_82961912.jpg" alt="advertisement2">
+                                <span class="picture-title">A New Generation of Saddles</span>
+                                <span class="author">by Artic Design</span>
+                                <span class="picture-description">Cambium is crafted from high-quality materials</span>
+                              </li>
+                              <li>
+                                <img src="images/photos/accessory_page/dreamstime_xxl_82963377.jpg" alt="advertisement3">
+                                <span class="picture-title">A New Generation of Saddles</span>
+                                <span class="author">by Artic Design</span>
+                                <span class="picture-description">Cambium is crafted from high-quality materials</span>
+                              </li>
+                          </ul>
+
+                      </div>
+
+                    <ul class="radio-buttons">
+
+                      <li>
+                        <input type="radio" name="product" value="1" checked>
+                        <span class="checked"></span>
+                      </li>
+
+                      <li>
+                        <input type="radio" name="product" value="2">
+                        <span class="first-after-checked"></span>
+                      </li>
+
+                      <li>
+                        <input type="radio" name="product" value="3">
+                        <span class="farthest-checked"></span>
+                      </li>
+                    </ul>
+                      <a href="#">Go to Sale it&nbsp;&nbsp;&nbsp;></a>
                   </div>
 
                   <div class="sidebar">
-                    <img src="#" alt="sidebar-text">
+
+                    <img src="images/photos/main/dreamstime_xxl_82995157.jpg" alt="sidebar-text">
+
                     <div class="textOnImg hide">
-                      <h2>Just</h2>
-                      <span>$12</span>
+                        <div class="transparent-background"></div>
+                        <h2>Just</h2>
+                        <span>$12</span>
                     </div>
-                    <section>
-                      <h3>The Pack</h3>
-                      <article></article>
-                      <span>The Easy Slicer is a very clever redesign for a canned ham packaging</span>
-                      <button>like it</button>
+
+                    <section class="section">
+                        <h3>The Pack</h3>
+                        <div class="stripe"></div>
+                        <span>The Easy Slicer is a very clever redesign for a canned ham packaging</span>
+                        <button>like it</button>
                     </section>
                   </div>
                 </div>
 
                 <div class="list-of-popular">
                   <h3>Popular products</h3>
-                  <ul>
-                    <li>
+                  <ul class="list-of-popular-products">
+                    <li class="first">
                       <figure>
                         <img src="images/closer.png" alt="Cambium is crafted">
-                        <figcaption>Cambium is crafted</figcaption>
-                        <figcaption>look <a href="#">closer</a></figcaption>
+                        <figcaption><span>Cambium is crafted</span><br>look <a href="product.html">closer</a></figcaption>
                       </figure>
                     </li>
-                    <li>
+                    <li class="second">
                       <figure>
                         <img src="images/closer.png" alt="Cambium is crafted">
-                        <figcaption>Cambium is crafted</figcaption>
-                        <figcaption>look <a href="product.html">closer</a></figcaption>
+                        <figcaption><span>Cambium is crafted</span><br>look <a href="product.html">closer</a></figcaption>
                       </figure>
                     </li>
-                    <li>
+                    <li class="third">
                       <figure>
                         <img src="images/closer.png" alt="Cambium is crafted">
-                        <figcaption>Cambium is crafted</figcaption>
-                        <figcaption>look <a href="product.html">closer</a></figcaption>
+                        <figcaption><span>Cambium is crafted</span><br>look <a href="product.html">closer</a></figcaption>
                       </figure>
                     </li>
-                    <li>
+                    <li class="fourth">
                       <figure>
                         <img src="images/closer.png" alt="Cambium is crafted">
-                        <figcaption>Cambium is crafted</figcaption>
-                        <figcaption>look <a href="product.html">closer</a></figcaption>
+                        <figcaption><span>Cambium is crafted</span><br>look <a href="product.html">closer</a></figcaption>
                       </figure>
                     </li>
-                    <li>
+                    <li class="fifth">
                       <figure>
                         <img src="images/closer.png" alt="Cambium is crafted">
-                        <figcaption>Cambium is crafted</figcaption>
-                        <figcaption>look <a href="product.html">closer</a></figcaption>
+                        <figcaption><span>Cambium is crafted</span><br>look <a href="#">closer</a></figcaption>
                       </figure>
                     </li>
-                    <li>
+                    <li class="sixth">
                       <figure>
                         <img src="images/closer.png" alt="Cambium is crafted">
-                        <figcaption>Cambium is crafted</figcaption>
-                        <figcaption>look <a href="product.html">closer</a></figcaption>
+                        <figcaption><span>Cambium is crafted</span><br>look <a href="#">closer</a></figcaption>
                       </figure>
                     </li>
                   </ul>
@@ -191,7 +231,6 @@
               <footer class="footer">
                 <ul class="list-ref">
                   <li><a href="#">About Us</a></li>
-                  <li><a href="#">Shipping Rates</a></li>
                   <li><a href="#">Shipping Rates</a></li>
                   <li><a href="#">Shop with Points</a></li>
                   <li><a href="#">Help</a></li>
@@ -208,7 +247,7 @@
                     <a href="#">Twitter</a>
                     <a href="#">Pinterest</a>
                   </div>
-                  <form class="subscribe-form">
+                  <form class="form-subscribe">
                     <input name="subscribe" type="email" class="subscribe" placeholder="your email@">
                     <button class="send">send</button>
                   </form>
@@ -224,6 +263,8 @@
     <script src="./js/total.js"></script>
     <script src="./js/login.js"></script>
     <script src="./js/basket.js"></script>
+    <script src="./js/carousel.js"></script>
     <script src="./js/sidebar.js"></script>
+    <script src="./js/drop-down-menu.js"></script>
 </body>
 </html>
